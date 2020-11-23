@@ -1,0 +1,1168 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright (C) 2015 The Android Open Source Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Uz Admin</string>
+    <string name="setup_app_name">Настроить Uz Admin</string>
+    <string name="cancel">Отмена</string>
+    <string name="set_up_managed_profile">Настроить управляемый профиль</string>
+    <string name="set_up_device_owner">Настроить владельца устройства</string>
+    <string name="set_up_management_header">Настроить управление</string>
+    <string name="setup_management_message">Это приложение в настоящее время не является владельцем этого
+        устройства или профиль. Выберите вариант ниже и нажмите «Далее», чтобы настроить
+        соответствующее управление с помощью этого приложения.</string>
+    <string name="setup_management_message_for_do">Это приложение в настоящее время назначено владельцем устройства. Выберите параметры
+        ниже и нажмите Далее, чтобы создать профиль, управляемый тем же приложением.</string>
+    <string name="provisioning_not_possible">Uz Admin в настоящее время не может быть настроен как владелец профиля или устройства.</string>
+    <string name="provisioning_not_possible_for_do">Uz Admin в настоящее время не может создавать управляемый профиль.</string>
+    <string name="exit">Выход</string>
+    <string name="managed_account_message">Добавлен аккаунт, требующий управления:</string>
+    <string name="managed_account_complete_message">Добавлен аккаунт, которым теперь управляют:</string>
+    <string name="account_migration_failed_message">Аккаунт не удалось перенести:</string>
+    <string name="add_account_later_message">Пожалуйста, добавьте учетную запись позже.</string>
+    <string name="setup_label">Настроить</string>
+    <string name="profile_name">Пример управляемого профиля</string>
+    <string name="skip_user_setup">Пропустить настройку пользователя</string>
+    <string name="skip_user_consent">Пропускать согласие пользователя во время подготовки</string>
+    <string name="keep_account_migrated">Сохраните учетную запись этого пользователя в случае миграции</string>
+    <string name="skip_encryption">Пропустить шифрование</string>
+    <string name="managed_profile_name">Пример управляемого профиля</string>
+    <string name="managed_user_name">Пример управляемого пользователя</string>
+    <string name="finish_setup">Завершить настройку</string>
+    <string name="finish_setup_account_not_ready">Завершите настройку, но учетная запись может быть не готова</string>
+    <string name="setup_finished">Настройка завершена</string>
+    <string name="click_finish_to_complete">Щелкните Готово, чтобы завершить установку.</string>
+    <string name="waiting_for_first_account_check_in">Завершающие штрихи</string>
+    <string name="finish_button">Финиш</string>
+    <string name="all_done">Установка успешно завершена</string>
+    <string name="all_done_explanation_profile_owner">Чтобы управлять новым управляемым профилем, посетите
+        версия этого приложения со значком.
+    </string>
+    <string name="all_done_explanation_device_owner">Для управления устройством откройте это приложение.</string>
+    <string name="add_account_title">Подготовка завершена успешно</string>
+    <string name="add_account_explanation">Чтобы добавить учетную запись, выберите соответствующую опцию ниже. Выберите пропустить,
+        если хотите добавить позже:</string>
+    <string name="add_account">Добавить аккаунт</string>
+    <string name="add_account_with_name">Добавить учетную запись с именем</string>
+    <string name="add_account_skip">Пропускать</string>
+    <string name="add_account_dialog_title">Имя учетной записи:</string>
+    <string name="fail_to_add_account">Не удалось добавить учетную запись</string>
+    <string name="remove_account">Удалить учетную запись</string>
+    <string name="success_remove_account">Аккаунт удален: %s</string>
+    <string name="fail_to_remove_account">Не удалось удалить аккаунт: %s</string>
+    <string name="no_accounts_available">Нет доступных аккаунтов.</string>
+    <string name="icon">Icon</string>
+    <string name="manage_apps">Управлять приложениями</string>
+    <string name="reset">Сброс настроек</string>
+    <string name="save">Сохранить</string>
+    <string name="migration_not_supported">Невозможно перенести аккаунт в профиль</string>
+    <string name="provisioning_not_supported">Синхронизация устройства не включена</string>
+    <string name="provisioning_failed_or_cancelled">Подготовка не удалась или отменена</string>
+    <string name="provisioning_params_title">Выберите параметры подготовки</string>
+    <string name="provisioning_params_color">Цвет: </string>
+    <string name="provisioning_params_logo">Логотип: </string>
+    <string name="provisioning_params_select">Выбрать</string>
+    <string name="error_opening_image_file">Ошибка при открытии файла изображения</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+
+    <string name="work_profile">Рабочий профиль</string>
+    <string name="personal_profile">Личный профиль</string>
+
+    <string name="managed_profile_specific_policy_category_title">Политики управляемого профиля</string>
+    <string name="managed_profile_specific_policy_title">Политики для управляемого рабочего профиля
+    </string>
+    <string name="policies_management">Управление политикой</string>
+    <string name="other_owner_already_setup_error">Уже есть владелец устройства / профиля, не может
+        запустить Uz Admin</string>
+    <string name="invalid_launch_intent_no_account">Аккаунт по входящему намерению не найден</string>
+    <string name="device_admin_receiver_failure">Не удалось стать владельцем устройства / профиля</string>
+    <string name="menu_search_title">Search</string>
+
+    <!-- Reasons for disabling preferences -->
+    <string name="requires_android_api_level">Требуется уровень API
+        <xliff:g id="api level">%d</xliff:g></string>
+    <string name="requires_preview_release">Требуется предварительная версия Android P</string>
+    <string name="requires">Требуется\u0020</string>
+    <string name="requires_delimiter">,\u0020</string>
+    <string name="requires_or">\u0020or\u0020</string>
+    <string name="device_owner">владелец устройства</string>
+    <string name="org_owned_profile_owner">владелец профиля организации</string>
+    <string name="profile_owner">владелец профиля</string>
+    <string name="primary_user">основной пользователь</string>
+    <string name="secondary_user">вторичный пользователь</string>
+    <string name="managed_profile">управляемый профиль</string>
+    <string name="requires_device_owner">Требуется владелец устройства</string>
+    <string name="requires_profile_owner_organization_owned_device">Требуется владелец профиля устройства, принадлежащего организации</string>
+
+    <string name="not_for_parent_profile">Не применимо к родительскому профилю</string>
+    <string name="user_restricted">Запрещено ограничением пользователя</string>
+    <string name="requires_network_logs">Требуется включение сетевого журнала</string>
+    <string name="requires_security_logs">Требуется включить ведение журнала безопасности</string>
+    <string name="not_for_password_quality">Не применимо к текущему качеству пароля</string>
+
+    <string name="this_is_a_device_owner">Это приложение является владельцем устройства.</string>
+    <string name="this_is_a_profile_owner">Это приложение является владельцем профиля.</string>
+    <string name="this_is_an_org_owned_profile_owner">Это приложение является владельцем профиля устройства, принадлежащего организации.</string>
+    <string name="this_is_a_delegated_app">Это приложение имеет делегированные разрешения.</string>
+    <string name="this_is_not_an_admin">Это приложение не является администратором.</string>
+
+    <!-- Strings for provisioning disclaimers-->
+    <string name="default_disclaimer_company_name">Компания Uz Admin</string>
+    <string name="default_disclaimer_emm_name">Uz Admin EMM</string>
+
+    <!-- Strings for device owner management -->
+    <string name="device_owner_management">Управление владельцем устройства</string>
+    <string name="set_auto_time_required">Установите необходимое автоматическое (сетевое) время</string>
+    <string name="set_auto_time">Установить автоматическое (сетевое) время</string>
+    <string name="set_auto_time_zone">Установить автоматический (сетевой) часовой пояс</string>
+    <string name="wipe_data">Стереть данные</string>
+    <string name="wipe_data_title">Удалить данные?</string>
+    <string name="wipe_data_confirmation">Вы уверены, что хотите стереть данные?</string>
+    <string name="wipe_data_include">Также протрите:</string>
+    <string name="external_storage">Внешнее хранилище</string>
+    <string name="reset_protection_data">Защита от сброса к заводским настройкам</string>
+    <string name="remove_device_owner">Удалить владельца этого устройства</string>
+    <string name="remove_device_owner_title">Удалить владельца устройства?</string>
+    <string name="remove_device_owner_confirmation">Правила и ограничения останутся
+        активен и может потребоваться сброс настроек до заводских.</string>
+    <string name="device_owner_removed">Это приложение больше не является владельцем устройства.</string>
+    <string name="persistent_device_owner_state_hint">Состояние тестирования будет восстановлено вместе с владельцем устройства после сброса настроек.</string>
+    <string name="set_persistent_device_owner_label">Задавать</string>
+    <string name="clear_persistent_device_owner_label">Очистить</string>
+    <!-- Corporate-owned work profile falls under device owner management, for convenience. -->
+    <string name="factory_reset_org_owned">Сброс настроек устройства с рабочим профилем, принадлежащим организации</string>
+    <string name="set_factory_reset_protection_policy">Установить политику защиты от сброса настроек</string>
+    <string name="factory_reset_protection_policy">Политика защиты от сброса настроек</string>
+    <string name="factory_reset_protection_policy_accounts">Акаунты</string>
+    <string name="factory_reset_protection_policy_enabled">Включено</string>
+    <string-array name="factory_reset_protection_policy_enabled_choices">
+        <item>Отключено</item>
+        <item>Включено</item>
+    </string-array>
+    <string name="cleared_factory_reset_protection_policy">Политика защиты от сброса настроек очищена</string>
+    <string name="saved_factory_reset_protection_policy">Сохраненная политика защиты от сброса настроек</string>
+
+    <!-- Strings for device reboot -->
+    <string name="reboot">Перезагрузите устройство</string>
+    <string name="reboot_error_msg">Не удается перезагрузить устройство во время разговора.</string>
+
+    <!-- Strings for cross-profile intent filters -->
+    <string name="cross_profile_intents">Межпрофильные намерения</string>
+    <string name="add_cross_profile_intents_title">Добавить кросс-профильные намерения</string>
+    <string name="clear_cross_profile_intents">Очистить все межпрофильные намерения</string>
+    <string name="actions_title">Акаунты:</string>
+    <string name="categories_title">Категории:</string>
+    <string name="data_schemes_title">Схемы:</string>
+    <string name="data_types_title">Типы данных:</string>
+    <string name="add_cross_profile_intent_success_msg">Добавлен кросс-профильный фильтр намерений
+    </string>
+    <string name="add_cross_profile_intent_failed_msg">Для кросс-профильного намерения требуется хотя бы одно
+        действие, категория или схема</string>
+    <string name="cross_profile_intent_filters_cleared">Все фильтры межпрофильных намерений были
+        удалено.</string>
+    <string name="cross_profile_intent_filters_flags">Флаги:</string>
+    <string name="add">Добавить</string>
+    <string name="clear">Очистить</string>
+
+    <!-- Strings for system information -->
+    <string name="invalid_security_patch">Неверный формат исправления безопасности:
+        <xliff:g id="security_patch">%s</xliff:g></string>
+    <string name="security_patch">Патч безопасности</string>
+
+    <!-- Strings for camera and screen capture -->
+    <string name="camera_title">Камера, снимок экрана и звук</string>
+    <string name="display_media">Дисплей Media</string>
+    <string name="disable_camera">Отключить камеру</string>
+    <string name="disable_camera_on_parent">Отключить камеру на родительском</string>
+    <string name="capture_image">Захват изображения</string>
+    <string name="capture_video">Захват видео</string>
+    <string name="camera_app_not_found">Убедитесь, что приложение камеры включено</string>
+    <string name="play_button_label">Играть</string>
+    <string name="stop_button_label">Стоп</string>
+    <string name="delete_button_label">Удалять</string>
+    <string name="disable_screen_capture">Отключить захват экрана</string>
+    <string name="disable_screen_capture_on_parent">Отключить захват экрана на родительском</string>
+    <string name="mute_audio">Отключить звук</string>
+
+    <!-- Stings for work profile management -->
+    <string name="profile_management_title">Управление рабочим профилем</string>
+    <string name="remove_managed_profile">Удалить рабочий профиль</string>
+    <string name="removing_managed_profile">Удаление рабочего профиля</string>
+    <string name="lock_parent_key">Заблокировать родителя</string>
+    <string name="evict_ce_key">Выселить ключ CE</string>
+
+    <!-- Strings for cross-profile widget provider -->
+    <string name="cross_profile_widget_providers_title">Поставщики кросс-профильных виджетов</string>
+    <string name="add_cross_profile_app_widget_providers_title">Включить виджеты приложений</string>
+    <string name="add_cross_profile_app_widget_providers">Включение виджетов приложения в приложении рабочего профиля
+    </string>
+    <string name="remove_cross_profile_app_widget_providers_title">Отключить виджеты приложений</string>
+    <string name="remove_cross_profile_app_widget_providers">Удалить виджеты приложений в рабочем профиле приложение</string>
+    <string name="all_cross_profile_widget_providers_are_enabled">Нет виджета ни на одном из
+        приложения рабочего профиля, которые находятся в отключенном состоянии.</string>
+    <string name="all_cross_profile_widget_providers_are_disabled">Нет виджета ни от одного из
+        приложения рабочего профиля, которые находятся во включенном состоянии.</string>
+    <string name="cross_profile_widget_enable">Виджеты из "%s" включены.</string>
+    <string name="cross_profile_widget_disable">Виджеты из "%s" отключены.</string>
+
+    <!-- Strings for policies -->
+    <string name="policies_title">Политики</string>
+    <string name="disable_bluetooth_contact_sharing">Отключить совместное использование контактов Bluetooth</string>
+    <string name="disable_cross_profile_caller_id">Отключить перекрестный профиль вызывающего абонента</string>
+    <string name="disable_cross_profile_contacts_search">Отключить кросс-профильный поиск контактов</string>
+
+    <!-- Strings for APN -->
+    <string name="override_apn_title">Отменить управление APN</string>
+    <string name="manage_override_apn">Управление переопределением APN</string>
+    <string name="insert_override_apn">Вставить переопределить APN</string>
+    <string name="insert_override_apn_error">Не удалось вставить переопределение APN, неверный формат</string>
+    <string name="remove_override_apn">Удалить все переопределенные APN</string>
+    <string name="enable_override_apn">Включить переопределение APN</string>
+    <string name="apn_entry_name">Имя записи</string>
+    <string name="apn_apn_name">Имя APN</string>
+    <string name="apn_proxy">Адрес прокси</string>
+    <string name="apn_port">Порт прокси</string>
+    <string name="apn_mmsc">MMSC</string>
+    <string name="apn_mmsproxy">Адрес прокси-сервера MMS</string>
+    <string name="apn_mmsport">Порт прокси-сервера MMS</string>
+    <string name="apn_user">Пользователь</string>
+    <string name="apn_password">Пароль</string>
+    <string name="apn_auth_type">Тип аутентификации</string>
+    <string name="apn_type">Битовая маска типа apn</string>
+    <string name="apn_numeric">Числовой оператор(MCC+MNC)</string>
+    <string name="apn_protocol">Протокол</string>
+    <string name="apn_roaming_protocol">Протокол роуминга</string>
+    <string name="apn_carrier_enabled">Оператор включен</string>
+    <string name="apn_network_bitmask">Битовая маска типа сети</string>
+    <string name="apn_mvno_type">Тип MVNO</string>
+    <string name="apn_numeric_hint">Числовой=MCC+MNC</string>
+
+    <string name="apn_entry_name_cannot_be_empty">Имя записи не может быть пустым</string>
+    <string name="apn_name_cannot_be_empty">Имя APN не может быть пустым</string>
+    <string name="apn_type_cannot_be_zero">Битовая маска типа apn не может быть пустой или нулевой</string>
+    <string name="apn_wrong_url">Не удается проанализировать mmsc</string>
+    <string name="apn_wrong_inetaddress">Не удается проанализировать адрес прокси-сервера или адрес прокси-сервера MMS</string>
+    <string name="apn_wrong_port">Не удается проанализировать порт прокси-сервера или порт прокси-сервера MMS</string>
+
+    <!-- Strings for Cross Profile Calendar -->
+    <string name="cross_profile_calendar">Кросс-профильный календарь</string>
+    <string name="cross_profile_calendar_set_allowed_packages">Установить разрешенные пакеты</string>
+    <string name="cross_profile_calendar_set_allowed_packages_title">Введите имена пакетов через запятую</string>
+    <string name="cross_profile_calendar_allow_all_packages">Разрешить все пакеты</string>
+
+    <string-array name="apn_auth_type_choices">
+        <item>Не указан</item>
+        <!-- Do not translate. -->
+        <item>НИЧТО</item>
+        <!-- Do not translate. -->
+        <item>PAP</item>
+        <!-- Do not translate. -->
+        <item>CHAP</item>
+        <!-- Do not translate. -->
+        <item>PAP или CHAP</item>
+    </string-array>
+    <string-array name="apn_protocol_choices">
+        <item>Не указан</item>
+        <!-- Do not translate. -->
+        <item>IP</item>
+        <!-- Do not translate. -->
+        <item>IPV6</item>
+        <!-- Do not translate. -->
+        <item>IPV4V6</item>
+        <!-- Do not translate. -->
+        <item>PPP</item>
+    </string-array>
+    <string-array name="apn_mvno_type_choices">
+        <item>Не указан</item>
+        <!-- Do not translate. -->
+        <item>SPN</item>
+        <!-- Do not translate. -->
+        <item>IMSI</item>
+        <!-- Do not translate. -->
+        <item>GID</item>
+        <!-- Do not translate. -->
+        <item>ICCID</item>
+    </string-array>
+    <string-array name="apn_carrier_enabled_choices">
+        <item>Отключено</item>
+        <item>Включено</item>
+    </string-array>
+
+    <!-- Strings for wifi management -->
+    <string name="wifi_management_title">Управление WI-FI</string>
+    <string name="create_wifi_configuration">Создать конфигурацию WI-FI</string>
+    <string name="add_network">Добавить сеть</string>
+    <string name="wifi_ssid">Имя сети</string>
+    <string name="wifi_ssid_hint">Введите SSID</string>
+    <string name="wifi_security">Безопасность</string>
+    <string-array name="wifi_security_choices">
+        <item>Ничто</item>
+        <!-- Do not translate. -->
+        <item>WEP</item>
+        <!-- Do not translate. -->
+        <item>WPA/WPA2</item>
+    </string-array>
+    <string name="wifi_password">Пароль</string>
+    <string name="wifi_show_password">Показать пароль</string>
+    <string name="minimum_limit">Минимум 8 символов</string>
+    <!-- Hint for unchanged fields -->
+    <string name="wifi_unchanged">(без изменений)</string>
+    <string name="wifi_save">Сохранить</string>
+    <string name="wifi_cancel">Отмена</string>
+    <string name="wifi_config_success">Конфигурация WI-FI сохранена.</string>
+    <string name="wifi_config_fail">Не удалось сохранить конфигурацию WI-FI.</string>
+    <string name="enable_wifi_config_lockdown">Созданные Вл.Уст конфигурации WI-FI могут быть изменены только Вл.Уст</string>
+    <string name="modify_wifi_configuration">Изменить конфигурацию WI-FI</string>
+    <string name="show_wifi_mac_address">Показать MAC-адрес Wi-Fi</string>
+    <string name="show_wifi_mac_address_title">MAC-адрес Wi-Fi</string>
+    <string name="show_wifi_mac_address_not_available_msg">MAC-адрес Wi-Fi недоступен</string>
+    <string name="wifi_configs_header">Сохраненные конфигурации WI-FI</string>
+    <string name="wifi_update_config_button">Обновление выбрано</string>
+    <string name="wifi_remove_config_button">Убрать выбранное</string>
+    <string name="wifi_modification_error_title">Ошибка изменения конфигурации</string>
+    <string name="wifi_remove_config_error">Невозможно удалить SSID \'<xliff:g id="wifi_ssid">%1$s</xliff:g>\': netId = <xliff:g id="wifi_network_id">%2$d</xliff:g></string>
+    <string name="create_eap_tls_wifi_configuration">Создать конфигурацию EAP-TLS WI-FI</string>
+    <string name="wifi_identity">Личность (если есть)</string>
+    <string name="wifi_client_cert_password">Пароль сертификата клиента (если есть)</string>
+    <string name="import_ca_certificate">Импортировать сертификат ЦС</string>
+    <string name="import_user_certificate">Импортировать сертификат пользователя</string>
+    <string name="selected_certificate">Выбранный сертификат: <xliff:g example="server certificate" id="certificate_alias">%1$s</xliff:g></string>
+    <string name="selected_certificate_none">Ничто</string>
+    <string name="error_missing_ssid">Отсутствует SSID</string>
+    <string name="error_missing_ca_cert">Отсутствует сертификат CA</string>
+    <string name="error_missing_client_cert">Отсутствует сертификат клиента или неверный пароль сертификата</string>
+    <string name="wifi_eap_tls_dialog_message">EAP_TLS с сертификатом CA X.509 и сертификатом клиента PKCS12</string>
+    <string name="wifi_unknown_cert">Неизвестный сертификат</string>
+
+    <!-- Strings for managing apps -->
+    <string name="apps_management_title">Управление приложениями</string>
+    <string name="package_name_hints">Имя пакета</string>
+    <string name="package_name_error">Пакет не найден: %s</string>
+    <string name="enable_system_apps_title">Включить системные приложения</string>
+    <string name="enable_system_apps_by_package_name">Включение системного приложения по имени пакета</string>
+    <string name="enable_system_apps_by_package_name_success_msg">%s включен.</string>
+    <string name="enable_system_apps_by_intent">Включить системное приложение по намерению</string>
+    <string name="enable_system_apps_failure_msg">Не удалось включить системные приложения, которые получают данное намерение</string>
+    <string name="enable_system_apps_attempt_msg">Включенные системные приложения, которые получают данное намерение</string>
+    <string name="no_disabled_system_apps">Все системные приложения включены.</string>
+    <string name="install_existing_packages_title">Установить существующий пакет</string>
+    <string name="install_existing_packages_by_package_title">Установить существующий пакет по пакету</string>
+    <string name="install_existing_packages_success_msg">%s установлено.</string>
+    <string name="no_uninstalled_apps">Все закешированные приложения установлены.</string>
+    <string name="enable">Включить</string>
+    <string name="invalid_system_apps_action">Недействительное действие</string>
+    <string name="install_apk_package_title">Установить пакет из файла APK</string>
+    <string name="uninstall_packages_title">Удалить пакет</string>
+    <string name="hide_apps_title">Скрыть приложения</string>
+    <string name="hide_apps_parent_title">Скрыть приложения на родителях</string>
+    <string name="hide_apps_empty">Все приложения скрыты.</string>
+    <string name="hide_apps_success">%s теперь скрыто.</string>
+    <string name="hide_apps_failure">%s не может быть скрыт, потому что это активный админ или требуется системой.</string>
+    <string name="hide_apps_system_failure">%s не может быть скрыт, потому что предоставленный пакет не является системным пакетом.</string>
+    <string name="unhide_apps_title">Показать приложения</string>
+    <string name="unhide_apps_parent_title">Показать приложения для родителей</string>
+    <string name="unhide_apps_empty">В настоящее время нет скрытых приложений.</string>
+    <string name="unhide_apps_success">%s больше не скрывается.</string>
+    <string name="unhide_apps_failure">%s не может быть раскрыт.</string>
+    <string name="unhide_apps_system_failure">%s не может быть отображен, потому что предоставленный пакет не является системным пакетом.</string>
+    <string name="suspend_apps_title">Приостановить приложения</string>
+    <string name="suspend_apps_empty">Все приложения приостановлены.</string>
+    <string name="suspend_apps_success">%s сейчас приостановлено.</string>
+    <string name="suspend_apps_failure">%s не может быть приостановлено.</string>
+    <string name="unsuspend_apps_title">Отменить приостановку приложений</string>
+    <string name="unsuspend_apps_empty">В настоящее время нет приостановленных приложений.</string>
+    <string name="unsuspend_apps_success">%s больше не приостановлено.</string>
+    <string name="unsuspend_apps_failure">%s не может быть отключен.</string>
+    <string name="clear_app_data_title">Очистить данные приложения</string>
+    <string name="clear_app_data_empty">Нет доступных приложений.</string>
+    <string name="clear_app_data_success">%s данные теперь очищены.</string>
+    <string name="clear_app_data_failure">%s данные не могут быть удалены.</string>
+    <string name="keep_uninstalled_packages">Сохранить неустановленные пакеты</string>
+    <string name="enter_package_name">Введите название пакета</string>
+    <string name="package_name_empty_error">Имя пакета не может быть пустым</string>>
+
+    <!-- Strings for lock task -->
+    <string name="lock_task_title">Заблокировать задачу</string>
+    <string name="manage_lock_task">Управление списком задач блокировки</string>
+    <string name="no_primary_app_available">Основное приложение недоступно</string>
+    <string name="check_lock_task_permitted">Проверка блокировки разрешена</string>
+    <string name="input_package_name_hints">Введите название пакета</string>
+    <string name="check_lock_task_permitted_result_permitted">Заблокировать задачу разрешено.</string>
+    <string name="check_lock_task_permitted_result_not_permitted">Заблокировать задачу не разрешено.</string>
+    <string name="set_lock_task_features_title">Установить функции блокировки задачи</string>
+    <string name="lock_task_feature_system_info">Системная информация</string>
+    <string name="lock_task_feature_notifications">Уведомления</string>
+    <string name="lock_task_feature_home">Дом</string>
+    <string name="lock_task_feature_overview">Обзор</string>
+    <string name="lock_task_feature_global_actions">Глобальные действия (меню кнопки питания)</string>
+    <string name="lock_task_feature_keyguard">Блокировку клавиатуры</string>
+    <string name="start_lock_task">Режим самозапуска блокировки задач</string>
+    <string name="relaunch_in_lock_task_title">Запустить другое действие в режиме блокировки задач</string>
+    <string name="stop_lock_task">Остановить режим задачи блокировки</string>
+    <string name="lock_task_unavailable">Невозможно установить пакеты задач блокировки: этот пользователь не является аффилированным лицом</string>
+
+    <!-- Strings for single-use devices -->
+    <string name="single_use_devices">Одноразовые устройства</string>
+    <string name="disable_status_bar">Отключить строку состояния</string>
+    <string name="reenable_status_bar">Повторно включить строку состояния</string>
+    <string name="disable_keyguard">Отключить блокировку клавиатуры</string>
+    <string name="reenable_keyguard">Снова включить блокировку клавиатуры</string>
+    <string name="kiosk_mode">Режим киоска</string>
+    <string name="kiosk_select_title">Выберите киоск-приложения</string>
+    <string name="start_kiosk_mode">Запустить режим киоска</string>
+    <string name="stop_kiosk_mode">Остановить режим киоска</string>
+    <string name="setup_cosu">Настройка вашего устройства COSU\u2026</string>
+    <string name="setup_cosu_success">Устройство COSU успешно настроено</string>
+    <string name="setup_cosu_failure">Ошибка при настройке COSU</string>
+    <string name="setup_cosu_status_download">Скачивание файла конфигурации\u2026</string>
+    <string name="setup_cosu_status_parse">Разбор файла конфигурации\u2026</string>
+    <string name="setup_cosu_status_apps">Скачивание и установка дополнительных приложений\u2026</string>
+
+    <!-- Strings for user restriction management -->
+    <string name="user_restrictions_preference_title">Установите ограничения для пользователей</string>
+    <string name="user_restrictions_parent_preference_title">Установить ограничения пользователя на родителя</string>
+    <string name="user_restrictions_management_title">Пользовательские ограничения</string>
+    <string name="allow_parent_profile_app_linking">Разрешить веб-ссылки на приложения родителя</string>
+    <string name="disallow_add_managed_profile">Запретить добавлять управляемый профиль</string>
+    <string name="disallow_add_user">Запретить добавлять пользователя</string>
+    <string name="disallow_adjust_volume">Запретить регулировать громкость</string>
+    <string name="disallow_apps_control">Запретить управление приложениями</string>
+    <string name="disallow_bluetooth">Запретить bluetooth</string>
+    <string name="disallow_bluetooth_sharing">Запретить совместное использование Bluetooth</string>
+    <string name="disallow_config_bluetooth">Запретить конфигурацию bluetooth</string>
+    <string name="disallow_config_cell_broadcasts">Запретить трансляцию конфигурационной ячейки</string>
+    <string name="disallow_config_credentials">Запретить учетные данные конфигурации</string>
+    <string name="disallow_config_mobile_networks">Запретить конфигурацию мобильных сетей</string>
+    <string name="disallow_config_tethering">Запретить модем конфигурации</string>
+    <string name="disallow_config_vpn">Запретить конфигурацию vpn</string>
+    <string name="disallow_config_wifi">Запретить конфигурацию Wi-Fi</string>
+    <string name="disallow_create_windows">Запретить создание окон</string>
+    <string name="disallow_system_error_dialogs">Запретить диалоги системных ошибок</string>
+    <string name="disallow_cross_profile_copy_paste">Запретить копирование / вставку перекрестного профиля</string>
+    <string name="disallow_data_roaming">Запретить роуминг данных</string>
+    <string name="disallow_debugging_features">Запретить функции отладки</string>
+    <string name="disallow_factory_reset">Запретить сброс к заводским настройкам</string>
+    <string name="disallow_fun">Запретить веселье</string>
+    <string name="disallow_install_apps">Запретить установку приложений</string>
+    <string name="disallow_install_unknown_sources">Запретить установку неизвестных источников</string>
+    <string name="check_setting_disallow_install_unknown_sources">Убедитесь, что
+        \"Разрешить установку из неизвестных источников\" в разделе Управление настройками правильно проверено.
+    </string>
+    <string name="disallow_install_unknown_sources_globally">Запретить установку из неизвестных источников во всем мире</string>
+    <string name="check_setting_ok">Ok</string>
+    <string name="disallow_modify_accounts">Запретить изменение учетных записей</string>
+    <string name="disallow_mount_physical_media">Запретить монтировать физические носители</string>
+    <string name="disallow_network_reset">Запретить сброс сети</string>
+    <string name="disallow_outgoing_beam">Запретить исходящий луч</string>
+    <string name="disallow_outgoing_calls">Disallow outgoing calls</string>
+    <string name="disallow_remove_managed_profile">Запретить удаление управляемого профиля</string>
+    <string name="disallow_remove_user">Запретить удаление пользователя</string>
+    <string name="disallow_safe_boot">Запретить безопасную загрузку</string>
+    <string name="disallow_set_user_icon">Запретить установить значок пользователя</string>
+    <string name="disallow_set_wallpaper">Запретить устанавливать обои</string>
+    <string name="disallow_share_location">Запретить делиться местоположением</string>
+    <string name="disallow_sms">Запретить смс</string>
+    <string name="disallow_uninstall_apps">Запретить удаление приложений</string>
+    <string name="disallow_unmute_microphone">Запретить включение микрофона</string>
+    <string name="disallow_usb_file_transfer">Запретить передачу файлов через usb</string>
+    <string name="ensure_verify_apps">Убедитесь, что проверьте приложения</string>
+    <string name="disallow_autofill">Запретить автозаполнение</string>
+    <string name="disallow_unified_password">Требуется отдельный вызов</string>
+    <string name="disallow_user_switch">Запретить переключение пользователя</string>
+    <string name="disallow_config_location">Запретить расположение конфигурации</string>
+    <string name="disallow_airplane_mode">Запретить режим полета</string>
+    <string name="disallow_config_brightness">Запретить яркость конфигурации</string>
+    <string name="disallow_config_date_time">Запретить дату и время конфигурации</string>
+    <string name="disallow_config_screen_timeout">Запретить время ожидания экрана конфигурации</string>
+    <string name="disallow_ambient_display">Запретить окружающий дисплей</string>
+    <string name="disallow_share_into_work_profile">Запретить публиковать данные в профиле</string>
+    <string name="disallow_printing">Запретить печать</string>
+    <string name="disallow_config_private_dns">Запретить конфигурацию частного DNS</string>
+    <string name="disallow_content_capture">Запретить захват контента</string>
+    <string name="disallow_content_suggestions">Запретить предложения контента</string>
+    <string name="user_restriction_error_msg">Операция запрещена</string>
+
+    <!-- Strings for select app -->
+    <string name="current_selected_package">Данный пакет:</string>
+    <string name="selected_package_new_label">Имя нового пакета</string>
+    <string name="selected_package_set">Задавать</string>
+    <string name="selected_package_clear">Очистить</string>
+    <string name="selected_package_none">Ничто</string>
+    <string name="select_app_instructions">Выберите приложение из списка,
+        или вручную введите имя пакета ниже:</string>
+
+
+    <!-- Strings for certificate management  -->
+    <string name="certificate_management_title">Управление сертификатами</string>
+    <string name="install_key_certificate">Установите пару закрытого/открытого ключей</string>
+    <string name="remove_key_certificate">Удалить пару закрытого/открытого ключей</string>
+    <string name="remove_keypair_successfully">Пара ключей удалена.</string>
+    <string name="remove_keypair_fail">Не удалось удалить пару ключей.</string>
+    <string name="key_override_alias">Заменить клиентские сертификаты псевдонимом</string>
+    <string name="certificate_password_prompt_title">Извлечь сертификат</string>
+    <string name="certificate_password_prompt_enter_password">Введите пароль для извлечения сертификаты.</string>
+    <string name="certificate_password_prompt_incorrect">Введите правильный пароль.</string>
+    <string name="certificate_alias_prompt_title">Назовите сертификат</string>
+    <string name="certificate_alias_prompt_certificate_name">Название сертификата:</string>
+    <string name="certificate_added">\"%s\" сертификат добавлен.</string>
+    <string name="certificate_add_failed">\"%s\" сертификат не может быть установлен.</string>
+    <string name="not_a_key_certificate">Выбранный сертификат не является сертификатом закрытого ключа.
+    </string>
+    <string name="generate_key_and_certificate">Создайте пару закрытого/открытого ключей</string>
+    <string name="key_generation_successful">Ключ и сертификат успешно сгенерированы</string>
+    <string name="key_generation_failed">НЕУДАЧНАЯ генерация ключа</string>
+    <string name="test_key_usage">Тестовая подпись/проверка с ключом</string>
+    <string name="key_usage_successful">Успешно подписано с %1$s</string>
+    <string name="key_usage_failed">НЕ ИСПОЛЬЗУЕТСЯ использование ключа для подписи/проверки</string>
+    <string name="attestation_details_header">Детали аттестационной записи:</string>
+    <string name="attestation_challenge_description">Задача аттестации:</string>
+    <string name="device_serial_number_description">Серийный номер из сертификата:</string>
+    <string name="device_imei_description">IMEI из сертификата:</string>
+    <string name="device_meid_description">MEID из сертификата:</string>
+    <string name="attestation_chain_length_description">Длина цепочки аттестации:</string>
+    <string name="attestation_root_description">Корень аттестации:</string>
+    <string name="install_ca_certificate">Установить сертификат ЦС</string>
+    <string name="install_ca_successfully">Выбранный сертификат CA установлен.</string>
+    <string name="install_ca_fail">Выбранный сертификат CA не установлен.</string>
+    <string name="get_ca_certificates">Получить список сертификатов ЦС</string>
+    <string name="no_ca_certificate">Сертификат CA не установлен.</string>
+    <string name="installed_ca_title">Установленные сертификаты ЦС</string>
+    <string name="remove_all_ca_certificates">Удалить все сертификаты ЦС</string>
+    <string name="all_ca_certificates_removed">Все сертификаты ЦС были удалены.</string>
+    <string name="user_selectability_description">Возможность выбора пользователем</string>
+    <string name="user_selectability_checkbox">Сделать доступным для выбора пользователем</string>
+    <string name="ec_key_checkbox">Создать ключ EC (по умолчанию: RSA)</string>
+    <string name="key_attestation_description">Основные параметры аттестации</string>
+    <string name="key_attestation_checkbox">Включите ключевую аттестацию</string>
+    <string name="device_id_attestation_description">Параметры подтверждения идентификатора устройства</string>
+    <string name="brand_attestation_checkbox">Включите только подтверждение бренда</string>
+    <string name="serial_num_attestation_checkbox">Включите серийный номер устройства</string>
+    <string name="imei_attestation_checkbox">Включить IMEI устройства</string>
+    <string name="meid_attestation_checkbox">Включить MEID устройства</string>
+    <string name="strongbox_features_description">Параметры, связанные с StrongBox</string>
+    <string name="use_strongbox_checkbox">Используйте StrongBox</string>
+    <string name="use_individual_attestation_checkbox">Использовать индивидуальный аттестационный сертификат</string>
+
+
+    <!-- Strings for app restrictions -->
+    <string name="managed_configurations">Управляемые конфигурации</string>
+    <string name="define_bundle">Определить пакет</string>
+    <string name="define_bundle_array">Определить массив пакетов</string>
+    <string name="load_manifest_restrictions">Загрузить ограничения манифеста</string>
+    <string name="set_app_restrictions_success">Успешно установлены ограничения приложений для %s</string>
+    <string name="app_restrictions_info">%1$s - %2$s</string>
+    <string name="plus">+</string>
+    <string name="app_restrictions_managing_package">Диспетчер ограничений приложений</string>
+
+    <!-- Strings for app feedback -->
+    <!-- [CHAR LIMIT=40] Settings label. A user can toggle this setting to turn on notifications for app feedback. -->
+    <string name="app_feedback_notifications">Уведомления об обратной связи приложения</string>
+
+    <!-- Strings for metered data restriction -->
+    <string name="metered_data_restriction">Отключить измеряемые данные</string>
+    <string name="update_pkgs">Обновить</string>
+    <string name="metered_data_restriction_failed_pkgs">Не удалось ограничить %s</string>
+
+    <!-- Strings for delegation -->
+    <string name="delegation_title">Делегация</string>
+    <string name="generic_delegation">Общее делегирование</string>
+    <string name="delegation_success">Области успешно сохранены</string>
+    <string name="delegation_error">Ошибка, см. логи</string>
+    <string name="delegation_scope_instructions">Отметьте области, которые следует делегировать</string>
+    <string name="delegation_scope_prompt_title">Объемы делегирования</string>
+    <string name="delegation_scope_cert_install">Установка сертификата</string>
+    <string name="delegation_scope_app_restrictions">Ограничения приложений</string>
+    <string name="delegation_scope_block_uninstall">Заблокировать удаление</string>
+    <string name="delegation_scope_permission_grant">Грант разрешения</string>
+    <string name="delegation_scope_package_access">Доступ к пакету</string>
+    <string name="delegation_scope_enable_system_app">Включение системного приложения</string>
+    <string name="delegation_scope_keep_uninstalled_packages">Сохранить неустановленные пакеты</string>
+    <string name="delegation_scope_network_logging">Доступ к сетевому журналу</string>
+    <string name="delegation_scope_cert_selection">Выберите приватный ключ</string>
+    <string name="manage_cert_installer">Установщик делегированных сертификатов</string>
+
+    <!-- strings used in the alert dialog for editing application restrictions. -->
+    <string name="select_type">Выберите тип:</string>
+    <string name="app_restrictions_key">Ключ:</string>
+    <string name="key_hint">Ключ ограничения</string>
+    <string name="app_restrictions_value">Значение:</string>
+    <string name="edit_bundle_instruction">Добавьте значения на экране редактирования</string>
+    <string name="key_empty_error">Ключ ограничения не должен быть пустым</string>
+    <string name="value_not_valid">Значение ограничения недействительно</string>
+    <string name="restriction_save_label">Сохранить</string>
+    <string name="restriction_cancel_label">Отмена</string>
+    <!-- Text shown in configure button when bundle/bundle array is chosen -->
+    <string name="configure">Настроить</string>
+
+    <!-- Remote bugreport -->
+    <string name="bugreport_title">Сообщение об ошибке</string>
+    <string name="request_bugreport">Запросить отчет об ошибке</string>
+    <string name="received_bugreport">Получен отчет об ошибке %1$s хеш: %2$s</string>
+    <string name="received_bugreport_failed_retrieval">Получен файл отчета об ошибке, но не удалось его получить</string>
+    <string name="bugreport_sharing_declined">Пользователь отказался поделиться отчетом об ошибке</string>
+    <string name="bugreport_failure_message">Ошибка запроса отчета об ошибке: %s</string>
+    <string name="bugreport_failure_throttled">Отчет об ошибке уже собирается на этом устройстве</string>
+    <string name="bugreport_failure_exception">Не удается запросить отчет об ошибке: на устройстве есть неаффилированные пользователи</string>
+    <string name="bugreport_failure_failed_completing">Не удалось выполнить операцию сбора отчетов об ошибках.</string>
+    <string name="bugreport_failure_file_no_longer_available">Файл отчета об ошибке больше не доступен для сбора</string>
+
+    <!-- Backup and Restore for Device Owner -->
+    <string name="enable_backup_service">Включить службу резервного копирования</string>
+
+    <string name="common_criteria_mode">Включить режим общих критериев</string>
+
+    <!-- Suspension of personal apps -->
+    <string name="suspend_personal_apps">Приостановить личные приложения</string>
+
+    <!-- Maximum time work profile is allowed to be off -->
+    <string name="profile_max_time_off">Максимальное время отключения рабочего профиля (секунды)</string>
+
+    <!-- Enterprise security logging -->
+    <string name="enable_security_logging">Включить ведение журнала безопасности</string>
+    <string name="request_security_logs">Запросить журналы безопасности</string>
+    <string name="request_pre_reboot_security_logs">Запросить журналы безопасности перед перезагрузкой</string>
+    <string name="failed_to_retrieve_security_logs">Не удалось получить журналы безопасности, вероятно, доступ к ним был осуществлен менее 2 часов назад.</string>
+    <string name="failed_to_retrieve_pre_reboot_security_logs">Не удалось получить журналы безопасности перед перезагрузкой, убедитесь, что ваше устройство поддерживает его.</string>
+    <string name="exception_retrieving_security_logs">Не разрешено получать журналы безопасности, выбрано SecurityException</string>
+    <string name="security_logs_retrieved_message">---- Журналы получены  %s ----</string>
+    <string name="on_security_logs_available">Тестовый DPC: журналы безопасности готовы к получению</string>
+
+    <!-- Network logging -->
+    <string name="enable_network_logging">Включить сетевой журнал</string>
+    <string name="request_network_logs">Запрос сетевых журналов</string>
+    <string name="on_network_logs_available">Тестовый DPC: сетевые журналы готовы к извлечению</string>
+    <string name="on_network_logs_available_success">Тестовый DPC: Пакет сетевых журналов %d извлечен</string>
+    <string name="on_network_logs_available_failure">Тестовый DPC: не удалось получить сетевые журналы</string>
+    <string name="on_network_logs_available_token_failure">Тестовый DPC: не удалось получить пакет сетевых журналов %d</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_title">Доступность</string>
+    <string name="set_accessibility_services">Установить службы доступности</string>
+    <string name="allow_all">Позволять все</string>
+    <string name="set_accessibility_services_successful">Приведенный список услуг доступности: включен</string>
+    <string name="set_accessibility_services_fail">Невозможно запретить услуги специальных возможностей, включенные основным пользователем</string>
+    <string name="all_accessibility_services_enabled">Все службы доступности включены</string>
+
+    <!-- Input method -->
+    <string name="input_methods_title">Методы ввода</string>
+    <string name="set_input_methods">Установить методы ввода</string>
+    <string name="set_input_methods_successful">Данный список методов ввода включен</string>
+    <string name="set_input_methods_fail">Невозможно запретить методы ввода, разрешенные основным пользователем</string>
+    <string name="all_input_methods_enabled">Включены все методы ввода.</string>
+
+    <!-- Notification listeners -->
+    <string name="notification_listeners_title">Службы приема уведомлений</string>
+    <string name="set_notification_listeners">Установить службы прослушивания уведомлений</string>
+    <string name="set_notification_listeners_successful">Данный список слушателей уведомлений включен</string>
+    <string name="set_notification_listeners_fail">Невозможно добавить предоставленный список слушателей уведомлений</string>
+    <string name="all_notification_listeners_enabled">Все прослушиватели уведомлений включены.</string>
+    <string name="set_notification_listeners_text">Установить текст службы прослушивателя уведомлений</string>
+    <string name="set_notification_listener_text_title">Пакеты слушателя уведомлений</string>
+    <string name="set_notification_listener_text_hint">Список пакетов, разделенных запятыми</string>
+
+    <string name="loading_resuls">Загрузка\u2026</string>
+
+    <!-- Account management -->
+    <string name="account_management_title">Управление аккаунтом</string>
+    <string name="set_disable_account_management">Переключить управление аккаунтом</string>
+    <string name="get_disable_account_management">Получить типы учетных записей с отключенным управлением</string>
+    <string name="account_type_hint">Введите тип учетной записи</string>
+    <string name="disable">Отключить</string>
+    <string name="account_management_disabled">Управление аккаунтом для \"%s\" был отключен.
+    </string>
+    <string name="account_management_enabled">Управление аккаунтом для \"%s\" был включен.
+    </string>
+    <string name="fail_to_set_account_management">Не удалось переключить управление учетной записью.</string>
+    <string name="list_of_disabled_account_types">Список отключенных типов учетных записей</string>
+    <string name="no_disabled_account">Нет отключенного типа учетной записи.</string>
+
+    <!-- User management -->
+    <string name="user_management">Управление пользователями</string>
+    <string name="create_and_initialize_user">Создать и инициализировать пользователя</string>
+    <string name="create_and_manage_user">Создание и управление пользователем</string>
+    <string name="create_managed_profile">Создать управляемый профиль</string>
+    <string name="skip_setup_wizard">Пропустить мастер настройки</string>
+    <string name="make_user_ephemeral">Сделать пользователя эфемерным</string>
+    <string name="start_user_in_background">Запуск пользователя в фоновом режиме</string>
+    <string name="user_started_in_background">Пользователь запустился в фоновом режиме.</string>
+    <string name="failed_to_start_user_in_background">Не удалось запустить пользователя в фоновом режиме.</string>
+    <string name="leave_all_system_apps_enabled">Оставьте все системные приложения включенными</string>
+    <string name="user_created">Успешно созданный пользователь с серийным номером %1$d.</string>
+    <string name="user_string">Пользователь %1$d</string>
+    <string name="enter_username_hint">Введите имя пользователя</string>
+    <string name="failed_to_create_user">Не удалось создать пользователя.</string>
+    <string name="enter_user_id">Введите серийный номер пользователя</string>
+    <string name="remove_user">Удалить пользователя</string>
+    <string name="user_removed">Пользователь удален.</string>
+    <string name="failed_to_remove_user">Не удалось удалить пользователя.</string>
+    <string name="switch_user">Поменять пользователя</string>
+    <string name="user_switched">Пользователь переключился.</string>
+    <string name="failed_to_switch_user">Не удалось сменить пользователя.</string>
+    <string name="stop_user">Остановить пользователя</string>
+    <string name="user_stopped">Пользователь остановился.</string>
+    <string name="failed_to_stop_user">Не удалось остановить пользователя.</string>
+    <string name="logout_user">Выйти из системы</string>
+    <string name="user_logouted">Пользователь вышел из системы.</string>
+    <string name="failed_to_logout_user">Не удалось выйти из системы.</string>
+    <string name="enable_logout">Включить выход</string>
+    <string name="set_user_session_message">Установить сообщение сеанса пользователя</string>
+    <string name="enter_start_session_message">Введите сообщение о начале сеанса</string>
+    <string name="enter_end_session_message">Введите сообщение о завершении сеанса</string>
+    <string name="affiliated_user">Аффилированный пользователь</string>
+    <string name="ephemeral_user">Эфемерный пользователь</string>
+    <string name="on_user_added_title">Пользователь создан</string>
+    <string name="on_user_removed_title">Пользователь удален</string>
+    <string name="on_user_started_title">Пользователь запустил</string>
+    <string name="on_user_stopped_title">Пользователь остановлен</string>
+    <string name="on_user_switched_title">Пользователь переключен</string>
+    <string name="on_user_added_message">Пользователь создан с серийным номером %1$d.</string>
+    <string name="on_user_removed_message">Пользователь с серийным номером %1$d удалено.</string>
+    <string name="on_user_started_message">Пользователь с серийным номером %1$d началось.</string>
+    <string name="on_user_stopped_message">Пользователь с серийным номером %1$d остановился.</string>
+    <string name="on_user_switched_message">Пользователь с серийным номером %1$d переключился.</string>
+    <string name="no_secondary_users_available">Вторичных пользователей нет.</string>
+
+    <!-- Affiliation ids -->
+    <string name="manage_affiliation_ids">Управление идентификаторами аффилированности</string>
+    <string name="enter_affiliation_id">Введите идентификатор аффилированности</string>
+    <string name="affiliation_id_empty_error">Идентификатор присоединения не может быть пустым</string>
+    >
+    <string name="require_affiliated_user">Требуется, чтобы пользователь был аффилирован</string>
+
+    <!-- Strings for block uninstall -->
+    <string name="block_uninstallation_title">Заблокировать удаление</string>
+    <string name="block_uninstallation_by_pkg">Заблокировать удаление по имени пакета</string>
+    <string name="block_uninstallation_list">Список заблокированных удалений</string>
+    <string name="uninstallation_blocked">%s удаление заблокировано.
+    </string>
+    <string name="uninstallation_allowed">%s удаление разрешено.
+    </string>
+    <string name="block_uninstallation_failed_invalid_pkgname">Не удалось обновить удаление блока
+        политика в отношении недопустимого имени пакета.
+    </string>
+    <string name="block">Блокировать</string>
+    <string name="unblock">Разблокировать</string>
+    <string name="close">Закрыть</string>
+
+    <!--  Strings for system update policy -->
+    <string name="system_update_management">Системное обновление</string>
+    <string name="system_update_policy">Управление политикой обновления системы</string>
+    <string name="system_update_policy_automatic">Автоматическая немедленная установка</string>
+    <string name="system_update_policy_Windowed">Установить в течение периода обслуживания</string>
+    <string name="system_update_policy_postpone">Отложить</string>
+    <string name="system_update_policy_none">Ничто</string>
+    <string name="current_system_update_policy">Текущая политика обновления системы:</string>
+    <string name="system_update_policy_window_start_label">Начало окна обслуживания:</string>
+    <string name="system_update_policy_window_end_label">Окончание периода обслуживания:</string>
+    <string name="system_update_policy_set_policy">Установить новую политику</string>
+    <string name="system_update_policy_window_freeze_period_label">Периоды замораживания:</string>
+    <string name="system_update_policy_add_freeze_period">Добавить новый период</string>
+    <string name="system_update_policy_pick_start_free_period_title">Выберите начало периода заморозки</string>
+    <string name="system_update_policy_pick_end_free_period_title">Выберите конец периода заморозки</string>
+
+    <!-- Strings for pending update info checking -->
+    <string name="system_update_pending">Проверить ожидающее обновление системы</string>
+    <string name="update_info_no_update_toast">Нет доступных обновлений системы.</string>
+    <string name="update_info_title">Информация об ожидающем обновлении</string>
+    <string name="update_info_received">Обновление было получено %1$s. Патч безопасности: %2$s.</string>
+    <string name="update_info_security_false">ложный</string>
+    <string name="update_info_security_true">правда</string>
+    <string name="update_info_security_unknown">неизвестно</string>
+
+    <!-- Strings for networking -->
+    <string name="networking_management_title">Сети</string>
+    <string name="set_always_on_vpn">Установить постоянный VPN</string>
+    <string name="set_global_http_proxy">Установить глобальный HTTP-прокси</string>
+    <string name="clear_global_http_proxy">Очистить глобальный HTTP-прокси</string>
+    <string name="networking_proxy_host">Хост</string>
+    <string name="networking_proxy_host_hint">Введите хост</string>
+    <string name="networking_proxy_port">Порт</string>
+    <string name="networking_proxy_port_hint">Введите порт</string>
+    <string name="no_host">Хост не указан.</string>
+    <string name="no_port">Порт не указан.</string>
+    <string name="port_out_of_range">Порт вне диапазона.</string>
+    <string name="set_global_private_dns">Установить режим частного DNS</string>
+    <string name="current_private_dns_mode">Current Mode</string>
+    <string name="private_dns_mode_off">Выключено</string>
+    <string name="private_dns_mode_automatic">Автоматический</string>
+    <string name="private_dns_mode_specific_host">Указанный хост</string>
+    <string name="private_dns_mode_unknown">Неизвестно</string>
+    <string name="private_dns_mode_apply">Задавать</string>
+    <string name="setting_private_dns_succeess">Успешная настройка частного DNS</string>
+    <string name="setting_private_dns_failure">НЕ УДАЛОСЬ: %s</string>
+
+    <!--  Strings for data usage -->
+    <string name="data_usage">Использование данных</string>
+    <string name="network_stats">Статистика использования сетевых данных</string>
+    <string-array name="network_stats_queries_array">
+        <item>Выберите тип запроса</item>
+        <item>Сводка запроса для устройства</item>
+        <item>Сводка запроса для пользователя</item>
+        <item>Сводка запросов приложений</item>
+        <item>Истории запросов приложений</item>
+    </string-array>
+    <string name="network_stats_choose_query_label">Выберите тип запроса: </string>
+    <string name="network_stats_start_date_label">Дата начала включительно: </string>
+    <string name="network_stats_end_date_label">Исключительная дата окончания: </string>
+    <string name="network_stats_device_summary_explanation">
+        Ниже вы можете увидеть использование сетевых данных в указанный интервал времени для всех пользователей устройства.
+    </string>
+    <string name="network_stats_device_summary">Устройство получило %1$s в %2$d пакетов и переданных %3$s в %4$d пакеты.</string>
+    <string name="network_stats_profile_summary_explanation">
+        Ниже вы можете увидеть сводное использование сетевых данных за указанный интервал времени для управляемого профиля..\n
+    </string>
+    <string name="network_stats_profile_summary">Профиль получил %1$s в %2$d пакетов и переданных %3$s в %4$d пакеты.</string>
+    <string name="network_stats_error_title">Ошибка при запросе сетевой статистики</string>
+    <string name="network_stats_result">Результат запроса</string>
+    <string name="network_stats_uid_removed">Удаленные приложения</string>
+    <string name="network_stats_uid_tethering">Модем</string>
+    <string name="network_stats_uid_system">Система Android</string>
+    <string name="network_stats_bucket_usage">Получила %1$s в %2$d пакетов и переданных %3$s в %4$d пакеты.</string>
+    <string name="network_stats_foreground_state">Состояние: передний план</string>
+    <string name="network_stats_default_state">Состояние: по умолчанию (фон)</string>
+    <string name="network_stats_combined_state">Состояние: совмещенный передний план и задний план</string>
+    <string name="network_stats_uid">UID = %1$d</string>
+    <string name="network_stats_items">%1$d предметы</string>
+    <string name="network_stats_security_error_msg">
+        Чтобы увидеть эти данные, необходимо включить Test DPC в настройках. &gt; Безопасность &gt; Приложения с доступом к использованию.
+    </string>
+
+    <!-- Strings for permission policies -->
+    <string name="permission_management">Управление разрешениями</string>
+    <string name="set_default_permission_policy">Get/Set политика разрешений по умолчанию</string>
+    <string name="permission_policy_prompt">Подсказка</string>
+    <string name="permission_policy_auto_accept">Авто принять</string>
+    <string name="permission_policy_auto_deny">Авто отказ</string>
+    <string name="permission_allow">Позволять</string>
+    <string name="permission_default">Позвольте пользователю решить</string>
+    <string name="permission_deny">Отрицать</string>
+    <string name="manage_app_permissions">Управление разрешениями приложений</string>
+    <!-- Message displayed when there are no apps permissions to show. -->
+    <string name="app_permissions_empty">Для этого приложения нет разрешений на отображение.</string>
+
+    <!-- Keyguard features -->
+    <string name="keyguard_features">Ключевые особенности защиты</string>
+    <string name="keyguard_disable_secure_camera">Отключить защищенную камеру</string>
+    <string name="keyguard_disable_secure_notifications">Отключить безопасные уведомления</string>
+    <string name="keyguard_disable_unredacted_notifications">Отключить неотредактированные уведомления</string>
+    <string name="keyguard_disable_trust_agents">Отключить доверенных агентов</string>
+    <string name="keyguard_disable_face">Отключить разблокировку по лицу</string>
+    <string name="keyguard_disable_iris">Отключить разблокировку диафрагмы</string>
+    <string name="keyguard_disable_fingerprint">Отключить отпечаток пальца</string>
+    <string name="keyguard_disable_remote_input">Отключить ввод текста на экране защищенной блокировки клавиатуры</string>
+
+    <!-- Trust agent features -->
+    <string name="trust_agent_features">Возможности доверительного агента</string>
+    <string name="set_trust_agent_config">Установить конфигурацию доверенного агента</string>
+
+    <!-- Strings for set time -->
+    <string name="set_time_manage">Установить время и часовой пояс</string>
+    <string name="set_time">Установить время (временная метка Unix в миллисекундах)</string>
+    <string name="no_set_time">Время не указано</string>
+    <string name="invalid_set_time">Неправильное время</string>
+    <string name="set_time_zone">Установить часовой пояс</string>
+    <string name="set_time_zone_hint">Пример: «Америка/Нью-Йорк», «Америка/Лос-Анджелес».</string>
+    <string name="no_timezone">Часовой пояс не указан</string>
+    <string name="invalid_timezone">ID часового пояса недействителен</string>
+
+    <!-- Strings for setting profile name -->
+    <string name="set_profile_name">Установить имя профиля</string>
+    <string name="no_profile_name">Отсутствует имя профиля</string>
+
+    <!-- Strings for set system settings -->
+    <string name="set_system_setting">Установить системные настройки</string>
+    <string name="auto_brightness">Автояркость</string>
+    <string name="set_screen_brightness">Установить яркость экрана</string>
+    <string name="set_screen_brightness_hint">Между 0 и 255</string>
+    <string name="no_screen_brightness">Значение яркости экрана не указано</string>
+    <string name="invalid_screen_brightness">Недопустимое значение яркости экрана.</string>
+    <string name="set_screen_off_timeout">Установить тайм-аут выключения экрана (в секундах)</string>
+    <string name="set_screen_off_timeout_hint">В секундах</string>
+    <string name="no_screen_off_timeout">Таймаут выключения экрана не указан</string>
+    <string name="invalid_screen_off_timeout">Тайм-аут выключения экрана недействителен</string>
+
+    <!-- Strings for screen lock policies -->
+    <string name="lock_category">Экран блокировки</string>
+
+    <string name="lock_screen_policy">Ограничения экрана блокировки</string>
+    <string name="maximum_lock_time_category">Максимальное время до блокировки экрана</string>
+    <string name="maximum_lock_time_seconds">Максимальное время до блокировки экрана (секунды)</string>
+    <string name="maximum_lock_time_all_admins">Максимальное время, установленное всеми/другими администраторами</string>
+    <string name="strong_auth_timeout_category">Тайм-аут, по истечении которого снова потребуется строгая аутентификация</string>
+    <string name="strong_auth_timeout_seconds">Тайм-аут для сильной аутентификации (секунды)</string>
+    <string name="maximum_password_fails">Максимальное количество сбоев пароля для локальной очистки</string>
+    <string name="maximum_password_fails_all_admins">Максимальное количество сбоев, установленное всеми/другими администраторами</string>
+    <string name="not_valid_input">Не удалось обновить: неверный ввод</string>
+    <string name="lock_screen_message">Сообщение на экране блокировки</string>
+
+    <!-- Strings for password policies -->
+    <string name="password_constraints">Ограничения пароля</string>
+
+    <string name="minimum_password_quality">Минимальное качество пароля</string>
+    <string name="password_quality_unspecified">Неопределенные</string>
+    <string name="password_quality_something">Что нибудь</string>
+    <string name="password_quality_numeric">Числовой</string>
+    <string name="password_quality_numeric_complex">Числовой (Комплексный)</string>
+    <string name="password_quality_alphabetic">По алфавиту</string>
+    <string name="password_quality_alphanumeric">Буквенно-цифровой</string>
+    <string name="password_quality_complex">Комплексный</string>
+
+    <string name="password_min_length">Минимальная длина пароля</string>
+    <string name="password_min_letters">Минимальное количество букв</string>
+    <string name="password_min_numeric">Минимальное количество цифр</string>
+    <string name="password_min_lowercase">Минимальное количество символов нижнего регистра</string>
+    <string name="password_min_uppercase">Минимальное количество символов верхнего регистра</string>
+    <string name="password_min_symbols">Minimum number of symbols</string>
+    <string name="password_min_nonletter">Минимальное количество не букв</string>
+
+    <string name="password_not_compliant_title">Пароль не соответствует</string>
+    <string name="separate_challenge_required_title">Требуется отдельная рабочая задача</string>
+    <string name="set_new_password_notification_content">Нажмите, чтобы установить новый пароль экрана блокировки</string>
+
+    <string name="password_expiration">Срок действия пароля</string>
+    <string name="password_expiration_seconds">Срок действия пароля (секунды)</string>
+    <string name="password_expiration_aggregate">Истечение срока всеми/другими администраторами</string>
+
+    <string name="password_expired_title">Срок действия пароля истек</string>
+    <string name="password_expired_by_self">Согласно политике, установленной Uz Admin.</string>
+    <string name="password_expired_by_others">В соответствии с политикой, установленной другим администратором.</string>
+    <string name="password_history_length">Длина истории паролей</string>
+
+    <plurals name="password_failed_attempts_title">
+        <item quantity="one">Пароль введен неверно %d время</item>
+        <item quantity="other">Пароль введен неверно %d времена</item>
+    </plurals>
+    <plurals name="password_failed_attempts_content">
+        <item quantity="one">Настроить очистку после %d попытка.</item>
+        <item quantity="other">Настроить очистку после %d попытки.</item>
+    </plurals>
+    <string name="password_failed_no_limit_set">Нет ограничений на неудачные попытки ввода пароля.</string>
+
+    <string name="password_compliant_title">Соответствует активному паролю</string>
+    <string name="password_compliant_profile_summary">Личное: %1$s, Работа: %2$s</string>
+    <string name="password_compliant_summary">Соответствует %1$s</string>
+
+    <!-- Strings for password complexity -->
+    <string name="password_complexity_title">Сложность пароля</string>
+    <string name="password_complexity_none">Ничто</string>
+    <string name="password_complexity_low">Низкий</string>
+    <string name="password_complexity_medium">Средняя</string>
+    <string name="password_complexity_high">Высоко</string>
+    <string name="password_complexity_profile_summary">Личное: %1$s, Работа: %2$s</string>
+
+    <string name="separate_challenge_title">Отдельный вызов</string>
+    <string name="separate_challenge_summary">Включен отдельный вызов: %s</string>
+
+    <!-- Strings for setting a new password -->
+    <string name="reset_password">Сброс пароля</string>
+    <string name="new_password">Новый пароль</string>
+    <string name="require_password_entry">Требовать самый надежный доступный тип аутентификации при следующей разблокировке</string>
+    <string name="dont_require_password_on_boot">Не требовать пароль для запуска пользователя в будущем</string>
+    <string name="password_reset_success">Пароль был сброшен</string>
+    <string name="password_reset_failed">Не удалось сбросить пароль</string>
+    <string name="do_not_allow_other_admins_change_password">Не позволяйте другим администраторам снова менять пароль, пока пользователь не введет его.</string>
+
+    <!-- Strings for trust agent -->
+    <string name="saved_trust_agent_config">Сохраненная конфигурация доверенного агента</string>
+
+    <string name="lock_now">Заблокируйте сейчас</string>
+
+    <!-- Strings for managing Settings -->
+    <string name="settings_management_title">Управление настройками</string>
+    <string name="stay_on_while_plugged_in">Не выключайте устройство, пока оно включено</string>
+    <string name="install_non_market_apps">Разрешить установку из неизвестных источников</string>
+    <string name="set_location_enabled">Установить местоположение включено</string>
+    <string name="set_location_mode">Установить режим местоположения (включена устаревшая версия настройки местоположения)</string>
+
+    <!-- Strings for setting support messages -->
+    <string name="support_messages">Сообщения службы поддержки</string>
+    <string name="set_short_support_message">Установить короткое сообщение поддержки</string>
+    <string name="set_long_support_message">Установить длинное сообщение поддержки</string>
+    <string name="set_message">установить сообщение</string>
+    <string name="clear_message">очистить сообщение</string>
+    <string name="set_default_message">установить сообщение по умолчанию</string>
+    <string name="default_short_message">
+        Это действие отключено вашим администратором. Для получения поддержки обратитесь по адресу jamoltura81@gmail.com.
+    </string>
+    <string name="default_long_message">
+        Этот профиль или устройство управляется Uz Admin. Вы можете связаться с тех.
+        поддержка на:\n\n
+        Uzbekistan: 99 351 90 82\n\n
+        Email: jamoltura81@gmail.com
+    </string>
+
+    <!-- Strings for organization info -->
+    <string name="organization_info">Информация об организации</string>
+    <string name="set_organization_color">Установить цвет организации</string>
+    <string name="set_organization_name">Установить название организации</string>
+
+    <!-- strings used in the color picker dialog -->
+    <string name="color_picker_done">Выполнено</string>
+    <string name="pick_color">Выбери цвет</string>
+    <string name="color_red_label">R</string>
+    <string name="color_green_label">G</string>
+    <string name="color_blue_label">B</string>
+    <string name="enter_color_value">Введите значение:</string>
+    <string name="update_color">Обновить</string>
+    <string name="not_valid_color">Неверный цвет</string>
+    <string name="color_format">#AARRGGBB</string>
+    <string name="unable_disable_keyguard">Невозможно отключить блокировку клавиатуры</string>
+    <string name="unable_enable_keyguard">Невозможно включить блокировку клавиатуры</string>
+
+    <!-- Transfer ownership -->
+    <string name="transfer_ownership">Передать право собственности</string>
+    <string name="transfer_ownership_to_component">Передать право собственности на компонент</string>
+    <string name="transfer">Перевод</string>
+    <string name="transfer_ownership_component_to_transfer_to">Компонент для передачи:</string>
+    <string name="transfer_ownership_example_package_name_example_component">example.package.name/example.class.name</string>
+    <string name="transfer_ownership_suitable_components_found_on_this_deivce">Подходящие компоненты, найденные на этом устройстве:</string>
+    <string name="transfer_ownership_result_of_the_transfer_success_or_exception_log">Результат передачи (журнал успехов или исключений):</string>
+    <string name="transfer_ownership_invalid_target_format">Имя целевого компонента имеет недопустимый формат. Ожидая \"example.package.name/example.class.name\".</string>
+    <string name="transfer_ownership_profile_owner_changed_title">Владелец профиля изменен</string>
+    <string name="transfer_ownership_device_owner_changed_title">Владелец устройства изменен</string>
+    <string name="transfer_ownership_complete_title">Передача права собственности завершена</string>
+    <string name="transfer_ownership_complete_message">Новый владелец %1$s</string>
+    <string name="transfer_ownership_affiliated_complete_title">Передача права собственности на аффилированный профиль завершена</string>
+    <string name="transfer_ownership_affiliated_complete_message">Переданный пользователь %1$s</string>
+
+    <string name="request_to_set_new_password">Попросить пользователя установить новый пароль</string>
+    <string name="request_to_set_new_password_with_complexity">Установите новый пароль и укажите минимальную сложность</string>
+    <string name="request_to_set_profile_parent_new_password">Просить пользователя установить новый пароль родительского профиля</string>
+
+    <!-- Device owner to profile owner communication (COMP and DO<->PO of secondary users) -->
+    <string name="bind_device_admin_category_title">Привязать к владельцу профиля</string>
+    <string name="bind_device_admin_policy_title">Привязать к службе владельца профиля</string>
+
+    <string name="bind_to_profile_owner_failed">Не удалось привязать к владельцу профиля. Пользователь запущен/разблокирован?</string>
+    <string name="po_user_status">Статус пользователя владельца профиля</string>
+    <string name="managed_profile_not_running">Управляемый профиль не запущен</string>
+    <string name="managed_profile_running_but_locked">Управляемый профиль работает, но заблокирован</string>
+    <string name="managed_profile_not_running_or_unlocked">Управляемый профиль не работает или заблокирован</string>
+    <string name="managed_profile_unlocked">Управляемый профиль разблокирован</string>
+    <string name="po_user_is_unlocked">Пользователь-владелец профиля с серийным номером %1$d разблокирован</string>
+    <string name="po_user_is_secondary">Владелец профиля принадлежит второстепенному пользователю</string>
+    <string name="require_one_po_to_bind">Требуется только один владелец профиля, которому разрешено связываться с</string>
+    <string name="hide_profile_owner_launcher_icon">Скрыть значок владельца профиля</string>
+    <string name="install_ca_cert_in_po_user">Установите сертификат ЦС в профиле пользователя-владельца</string>
+
+    <!-- strings used in the reset password with token dialog -->
+    <string name="reset_password_token_none">(Ничто)</string>
+    <string name="reset_password_token_active">Активный</string>
+    <string name="reset_password_token_inactive">Неактивный</string>
+    <string name="activate_reset_password_token_cancelled">Активация токена отменена</string>
+    <string name="set_password_reset_token_failed">Не удалось установить токен пароля</string>
+    <string name="clear_password_reset_token_failed">Не удалось удалить токен пароля</string>
+    <string name="reset_password_with_token_failed">Не удалось сбросить пароль</string>
+    <string name="reset_password_with_token_succeed">"Пароль успешно изменен на: '%1$s'</string>
+    <string name="reset_password_fragment_set_new_token">Установить новый токен</string>
+    <string name="reset_password_fragment_status">Статус:</string>
+    <string name="reset_password_fragment_delete_token">Удалить токен</string>
+    <string name="reset_password_fragment_activate">Активировать</string>
+    <string name="reset_password_fragment_token_label">Токен:</string>
+    <string name="reset_password_fragment_reset_password_section">Сброс пароля</string>
+    <string name="reset_password_fragment_new_password_label">Новый пароль:</string>
+    <string name="reset_password_fragment_set_password">Установка пароля</string>
+    <string name="reset_password_no_token">Нет токена</string>
+    <string name="reset_password_foreground_notification">Служба сброса пароля Uz Admin запущена</string>
+    <string name="reset_password_notification">Смахните это уведомление, чтобы сбросить пароль</string>
+
+    <string name="package_changed_notification_title">Наблюдаются изменения в пакете</string>
+    <string name="package_added_notification_text">%1$s добавлен</string>
+    <string name="package_removed_notification_text">%1$s удален</string>
+
+    <string name="cross_profile_section">Поперечный профиль</string>
+    <string name="cross_profile_apps_api">Продемонстрируйте API CrossProfileApps</string>
+    <string name="cross_profile_apps_api_explanation">Используя API CrossProfileApps, приложения могут запускать экземпляр в другом
+        профиле при условии, что приложение также установлено в этом профиле.</string>
+    <string name="cross_profile_apps_available">Uz Admin установлен в другом профиле, коснитесь значка, чтобы запустить его в этом профиле.</string>
+    <string name="cross_profile_apps_not_available">Uz Admin не установлен в другом профиле, попробуйте установить его и вернитесь сюда.</string>
+
+    <string name="cross_profile_apps_whitelist">Приложения с перекрестным профилем в белом списке</string>
+    <string name="cross_profile_apps_enabled_title">Включены кросс-профильные приложения</string>
+    <string name="cross_profile_apps_no_whitelisted_apps">Нет приложений в белом списке</string>
+    <string name="cross_profile_apps_example_text">example.package.name</string>
+    <string name="cross_profile_apps_add_button_text">Добавить приложение</string>
+    <string name="cross_profile_apps_remove_button_text">Удалить приложение</string>
+    <string name="cross_profile_apps_reset_button_text">Сбросить кросс-профильные приложения</string>
+
+    <string name="install_update">Установить обновление из файла</string>
+    <string name="install_update_prompt">Будет предпринята попытка установить файл обновления ota.zip в каталог файлов Uz Admin,
+        если файл существует (т.е. если вы отправили его туда с помощью adb). Вы хотите продолжить?</string>
+    <string name="install_update_prompt_yes">Да</string>
+    <string name="install_update_prompt_no">Нет</string>
+
+    <!-- strings used in dpc login screen and dpc policy compliance screen.-->
+    <string name="dpc_login_title">Выберите метод подготовки</string>
+    <string name="dpc_login_explanation">Выберите метод подготовки:</string>
+    <string name="dpc_login_do">Полностью управляемое устройство</string>
+    <string name="dpc_login_po">Управляемый профиль</string>
+    <string name="dpc_login_comp">Управляемый профиль на полностью управляемом устройстве</string>
+    <string name="dpc_policy_compliance_title">Соответствие политике dpc</string>
+    <string name="dpc_policy_compliance_explanation">Настройка Uz Admin завершена.</string>
+
+    <string name="vpn_exempted_packages">Освобожденные пакеты</string>
+    <string name="vpn_lockdown">Карантин</string>
+
+    <!-- This string is the title of a screen asking user how to set device up.
+
+      This screen will be shown if the user sets device up with a managed account, and we believe that the user may want to set up a managed profile rather than a managed device.[CHAR LIMIT=100] -->
+    <string name="selector_title">Как ты будешь пользоваться этим телефоном?</string>
+    <!-- This string is the subtitle of a screen for setting up a managed device.
+
+          This screen will be shown if the user sets device up with a managed account, and we believe that the user may want to set up a managed profile rather than a managed device.[CHAR LIMIT=100] -->
+    <string name="do_selection_subtitle">Работа</string>
+    <!-- This string is the detailed text of a screen for setting up a managed device, giving user more info on how their device will behave in this mode.
+
+        Text bullets that are part of a list. They describe one of the options a user can choose when setting up their new device, which would be to have their organization manage their entire device. That means that the data on the device won't be private (it will be visible to their IT admin), and it can be erased at any time.[CHAR LIMIT=200] -->
+    <string name="do_selection_detailed_text">
+        <li>Этим телефоном будет управлять ваш ИТ-администратор.</li>\n\n
+        <li>Ваши данные не будут конфиденциальными и могут быть удалены в любой момент.</li>
+    </string>
+    <!-- This string is for the button for setting up a managed device.
+
+        This screen will be shown if the user sets device up with a managed account, and we believe that the user may want to set up a managed profile rather than a managed device.[CHAR LIMIT=50] -->
+    <string name="do_selection_button_text">Использовать только для работы</string>
+
+
+    <!-- This string is the subtitle of a screen for setting up a managed profile.
+
+          This screen will be shown if the user sets device up with a managed account, and we believe that the user may want to set up a managed profile rather than a managed device.[CHAR LIMIT=100] -->
+    <string name="po_selection_subtitle">Работа и личное</string>
+    <!-- This string is the detailed text of a screen for setting up a managed profile, giving user more info on how their device will behave in this mode.
+
+        This screen will be shown if the user sets device up with a managed account, and we believe that the user may want to set up a managed profile rather than a managed device.[CHAR LIMIT=200] -->
+    <string name="po_selection_detailed_text">
+        <li>Ваши рабочие данные будут храниться в отдельном профиле</li>\n\n
+        <li>Ваши личные данные остаются конфиденциальными</li>
+    </string>
+    <!-- This string is for the button for setting up a managed profile.
+
+        This screen will be shown if the user sets device up with a managed account, and we believe that the user may want to set up a managed profile rather than a managed device.[CHAR LIMIT=50] -->
+    <string name="po_selection_button_text">Использовать для работы &amp; личный</string>
+
+
+    <!-- This string is the text shown to divide the two options shown on the mode selection screen.
+
+        This screen will be shown if the user sets device up with a managed account, and we believe that the user may want to set up a managed profile rather than a managed device.[CHAR LIMIT=100] -->
+    <string name="selection_divider_text">или</string>
+
+    <string name="head_user">Вход пользователя</string>
+    <string name="login">login</string>
+    <string name="password">password</string>
+
+</resources>
