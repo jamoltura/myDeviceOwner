@@ -39,6 +39,15 @@
             android:windowSoftInputMode="adjustPan">
 
             <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+            </intent-filter>
+
+            <intent-filter>
                 <action android:name="android.app.action.CHECK_POLICY_COMPLIANCE" />
 
                 <category android:name="android.intent.category.DEFAULT" />
@@ -52,6 +61,17 @@
             android:theme="@style/SuwThemeGlifV3.Light">
 
         </activity>
+
+        <activity-alias
+            android:name=".SetupManagementLaunchActivity"
+            android:targetActivity=".SetupManagementActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.INFO"/>
+            </intent-filter>
+        </activity-alias>
+
         <activity
             android:name=".AddAccountActivity"
             android:label="@string/app_name"

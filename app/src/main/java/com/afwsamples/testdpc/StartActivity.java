@@ -29,7 +29,7 @@ public class StartActivity extends Activity {
                 startActivity(intent);
                 finish();
             }else {
-                Toast.makeText(StartActivity.this, "Login yoki password noto`g`ri", Toast.LENGTH_SHORT).show();
+                Toast.makeText(StartActivity.this, "Логин или пароль введены не верно", Toast.LENGTH_SHORT).show();
             }
         });
     }

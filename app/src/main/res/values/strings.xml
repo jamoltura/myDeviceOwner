@@ -453,7 +453,7 @@
     <string name="disallow_config_wifi">Запретить конфигурацию Wi-Fi</string>
     <string name="disallow_create_windows">Запретить создание окон</string>
     <string name="disallow_system_error_dialogs">Запретить диалоги системных ошибок</string>
-    <string name="disallow_cross_profile_copy_paste">Запретить копирование / вставку перекрестного профиля</string>
+    <string name="disallow_cross_profile_copy_paste">Запретить копирование/вставку перекрестного профиля</string>
     <string name="disallow_data_roaming">Запретить роуминг данных</string>
     <string name="disallow_debugging_features">Запретить функции отладки</string>
     <string name="disallow_factory_reset">Запретить сброс к заводским настройкам</string>
@@ -469,7 +469,7 @@
     <string name="disallow_mount_physical_media">Запретить монтировать физические носители</string>
     <string name="disallow_network_reset">Запретить сброс сети</string>
     <string name="disallow_outgoing_beam">Запретить исходящий луч</string>
-    <string name="disallow_outgoing_calls">Disallow outgoing calls</string>
+    <string name="disallow_outgoing_calls">Запретить исходящие звонки</string>
     <string name="disallow_remove_managed_profile">Запретить удаление управляемого профиля</string>
     <string name="disallow_remove_user">Запретить удаление пользователя</string>
     <string name="disallow_safe_boot">Запретить безопасную загрузку</string>
@@ -1161,7 +1161,7 @@
         This screen will be shown if the user sets device up with a managed account, and we believe that the user may want to set up a managed profile rather than a managed device.[CHAR LIMIT=100] -->
     <string name="selection_divider_text">или</string>
 
-    <string name="head_user">Вход пользователя</string>
+    <string name="head_user">Вход администратора</string>
     <string name="login">login</string>
     <string name="password">password</string>
 
