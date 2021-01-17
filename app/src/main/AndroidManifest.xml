@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.afwsamples.testdpc">
+    package="com.example.tsg">
 
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
@@ -24,7 +24,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".StartActivity">
+        <activity android:name="com.example.tsg.StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,7 +33,7 @@
         </activity>
 
         <activity
-            android:name=".PolicyManagementActivity"
+            android:name="com.example.tsg.PolicyManagementActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustPan">
@@ -55,7 +55,7 @@
         </activity>
 
         <activity
-            android:name=".SetupManagementActivity"
+            android:name="com.example.tsg.SetupManagementActivity"
             android:label="@string/setup_app_name"
             android:taskAffinity=""
             android:theme="@style/SuwThemeGlifV3.Light">
@@ -64,7 +64,7 @@
 
         <activity-alias
             android:name=".SetupManagementLaunchActivity"
-            android:targetActivity=".SetupManagementActivity">
+            android:targetActivity="com.example.tsg.SetupManagementActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -73,11 +73,11 @@
         </activity-alias>
 
         <activity
-            android:name=".AddAccountActivity"
+            android:name="com.example.tsg.AddAccountActivity"
             android:label="@string/app_name"
             android:theme="@style/SuwThemeGlifV3.Light" />
         <activity
-            android:name=".FinalizeActivity"
+            android:name="com.example.tsg.FinalizeActivity"
             android:label="@string/app_name"
             android:permission="android.permission.BIND_DEVICE_ADMIN"
             android:theme="@style/SuwThemeGlifV3.Light">
@@ -88,11 +88,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".cosu.EnableCosuActivity"
+            android:name="com.example.tsg.cosu.EnableCosuActivity"
             android:label="@string/app_name"
             android:theme="@style/SuwThemeGlifV3.Light" />
         <activity
-            android:name=".policy.locktask.KioskModeActivity"
+            android:name="com.example.tsg.policy.locktask.KioskModeActivity"
             android:enabled="false"
             android:label="@string/kiosk_mode"
             android:launchMode="singleInstance">
@@ -104,7 +104,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".provision.DpcLoginActivity"
+            android:name="com.example.tsg.provision.DpcLoginActivity"
             android:exported="true"
             android:permission="android.permission.BIND_DEVICE_ADMIN"
             android:theme="@style/DpcLoginTheme">
@@ -115,7 +115,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".provision.ProvisioningSuccessActivity"
+            android:name="com.example.tsg.provision.ProvisioningSuccessActivity"
             android:theme="@android:style/Theme.NoDisplay">
             <intent-filter>
                 <action android:name="android.app.action.PROVISIONING_SUCCESSFUL" />
@@ -125,7 +125,7 @@
         </activity>
 
         <receiver
-            android:name=".DeviceAdminReceiver"
+            android:name="com.example.tsg.DeviceAdminReceiver"
             android:description="@string/app_name"
             android:label="@string/app_name"
             android:permission="android.permission.BIND_DEVICE_ADMIN">
@@ -142,7 +142,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".DelegatedAdminReceiver"
+            android:name="com.example.tsg.DelegatedAdminReceiver"
             android:permission="android.permission.BIND_DEVICE_ADMIN">
             <intent-filter>
                 <action android:name="android.app.action.CHOOSE_PRIVATE_KEY_ALIAS" />
@@ -150,14 +150,14 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".BootReceiver"
+            android:name="com.example.tsg.BootReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".policy.resetpassword.ResetPasswordService$LockedBootCompletedReceiver"
+            android:name="com.example.tsg.policy.resetpassword.ResetPasswordService$LockedBootCompletedReceiver"
             android:directBootAware="true"
             android:enabled="@bool/is_o_or_later">
             <intent-filter>
@@ -166,7 +166,7 @@
         </receiver>
 
         <service
-            android:name=".policy.resetpassword.ResetPasswordService"
+            android:name="com.example.tsg.policy.resetpassword.ResetPasswordService"
             android:directBootAware="true"
             android:enabled="@bool/is_o_or_later">
 
@@ -174,7 +174,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.afwsamples.testdpc.fileprovider"
+            android:authorities="com.example.tsg.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -182,21 +182,21 @@
                 android:resource="@xml/filepaths" />
         </provider>
 
-        <service android:name=".profilepolicy.apprestrictions.AppRestrictionsProxy">
+        <service android:name="com.example.tsg.profilepolicy.apprestrictions.AppRestrictionsProxy">
             <intent-filter>
                 <action android:name="com.android.vending.dpc.APPLICATION_RESTRICTIONS_PROXY" />
             </intent-filter>
         </service>
         <service
-            android:name=".comp.ProfileOwnerService"
+            android:name="com.example.tsg.comp.ProfileOwnerService"
             android:exported="true"
             android:permission="android.permission.BIND_DEVICE_ADMIN" />
         <service
-            android:name=".comp.DeviceOwnerService"
+            android:name="com.example.tsg.comp.DeviceOwnerService"
             android:exported="true"
             android:permission="android.permission.BIND_DEVICE_ADMIN" />
         <service
-            android:name=".DeviceAdminService"
+            android:name="com.example.tsg.DeviceAdminService"
             android:enabled="@bool/is_o_or_later"
             android:exported="true"
             android:permission="android.permission.BIND_DEVICE_ADMIN">
@@ -204,7 +204,7 @@
                 <action android:name="android.app.action.DEVICE_ADMIN_SERVICE" />
             </intent-filter>
         </service>
-        <service android:name=".feedback.AppStatesService">
+        <service android:name="com.example.tsg.feedback.AppStatesService">
             <intent-filter>
                 <action android:name="androidx.enterprise.feedback.action.APP_STATES" />
             </intent-filter>

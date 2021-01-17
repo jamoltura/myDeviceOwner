@@ -1,2 +1,2 @@
-include ':TestDPC'
-project(':TestDPC').projectDir = new File(rootDir, "app")
+rootProject.name='myDeviceOwner'
+include ':app'

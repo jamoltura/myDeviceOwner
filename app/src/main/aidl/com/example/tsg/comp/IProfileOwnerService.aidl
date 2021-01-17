@@ -1,4 +1,4 @@
-package com.afwsamples.testdpc.comp;
+package com.example.tsg.comp;
 
 import android.content.res.AssetFileDescriptor;
 

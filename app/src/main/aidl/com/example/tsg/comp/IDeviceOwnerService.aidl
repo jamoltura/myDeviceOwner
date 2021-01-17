@@ -1,4 +1,4 @@
-package com.afwsamples.testdpc.comp;
+package com.example.tsg.comp;
 
 interface IDeviceOwnerService {
     /**
