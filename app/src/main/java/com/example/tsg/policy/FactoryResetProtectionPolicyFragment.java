@@ -22,6 +22,7 @@ import android.app.admin.DevicePolicyManager;
 import android.app.admin.FactoryResetProtectionPolicy;
 import android.content.ComponentName;
 import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -101,6 +102,7 @@ public class FactoryResetProtectionPolicyFragment extends Fragment
         return view;
     }
 
+    @RequiresApi(api = Util.R_VERSION_CODE)
     private void refreshUi() {
         mAccountsAdapter.clear();
         mFrpEnabledSpinner.setSelection(DISABLED);
@@ -146,17 +148,21 @@ public class FactoryResetProtectionPolicyFragment extends Fragment
                 createAddAccountDialog();
                 break;
             case R.id.clear_frp_button:
-                mDevicePolicyManager.setFactoryResetProtectionPolicy(mAdminComponentName, null);
-                refreshUi();
-                showToast(R.string.cleared_factory_reset_protection_policy);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                    mDevicePolicyManager.setFactoryResetProtectionPolicy(mAdminComponentName, null);
+                    refreshUi();
+                    showToast(R.string.cleared_factory_reset_protection_policy);
+                }
                 break;
             case R.id.save_frp_button:
-                mDevicePolicyManager.setFactoryResetProtectionPolicy(mAdminComponentName,
-                        new FactoryResetProtectionPolicy.Builder()
-                                .setFactoryResetProtectionAccounts(mAccounts)
-                                .setFactoryResetProtectionEnabled(mEnabled)
-                                .build());
-                showToast(R.string.saved_factory_reset_protection_policy);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                    mDevicePolicyManager.setFactoryResetProtectionPolicy(mAdminComponentName,
+                            new FactoryResetProtectionPolicy.Builder()
+                                    .setFactoryResetProtectionAccounts(mAccounts)
+                                    .setFactoryResetProtectionEnabled(mEnabled)
+                                    .build());
+                    showToast(R.string.saved_factory_reset_protection_policy);
+                }
                 break;
         }
     }

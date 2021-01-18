@@ -72,7 +72,7 @@ public class KioskModeActivity extends Activity {
     private static final String KIOSK_APPS_KEY = "kiosk_apps";
 
     public static final String LOCKED_APP_PACKAGE_LIST
-            = "com.afwsamples.testdpc.policy.locktask.LOCKED_APP_PACKAGE_LIST";
+            = "com.example.tsg.policy.locktask.LOCKED_APP_PACKAGE_LIST";
 
     private static final String[] KIOSK_USER_RESTRICTIONS = {
             DISALLOW_SAFE_BOOT,

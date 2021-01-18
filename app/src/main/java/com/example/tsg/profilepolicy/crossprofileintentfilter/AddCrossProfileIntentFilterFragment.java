@@ -15,6 +15,7 @@
  */
 package com.example.tsg.profilepolicy.crossprofileintentfilter;
 
+import android.annotation.SuppressLint;
 import android.app.admin.DevicePolicyManager;
 import android.content.IntentFilter;
 import android.content.IntentFilter.MalformedMimeTypeException;
@@ -162,6 +163,7 @@ public class AddCrossProfileIntentFilterFragment extends IntentOrIntentFilterFra
      *
      * @return a user constructed intent filter.
      */
+    @SuppressLint("LongLogTag")
     private IntentFilter getIntentFilter() {
         if (mActions.isEmpty() && mCategories.isEmpty() && mDataSchemes.isEmpty()
                 && mDataTypes.isEmpty()) {

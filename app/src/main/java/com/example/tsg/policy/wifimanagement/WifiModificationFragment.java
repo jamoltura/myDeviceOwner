@@ -23,6 +23,7 @@ import android.app.AlertDialog;
 import android.app.DialogFragment;
 import android.app.Fragment;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiManager;
 import android.os.Build.VERSION_CODES;
@@ -35,11 +36,15 @@ import android.widget.Button;
 import android.widget.CheckedTextView;
 import android.widget.ListView;
 import android.widget.TextView;
+
 import androidx.annotation.RequiresApi;
+import androidx.core.app.ActivityCompat;
+
 import com.example.tsg.DeviceAdminReceiver;
 import com.example.tsg.R;
 import com.example.tsg.common.PermissionsHelper;
 import com.example.tsg.common.Util;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -59,6 +64,16 @@ public class WifiModificationFragment extends Fragment
         mConfiguredNetworks.clear();
         // WifiManager deprecated APIs including #getConfiguredNetworks are restricted to system apps and DPCs
         // https://developer.android.com/preview/privacy/camera-connectivity#wifi-network-config-restrictions
+        if (ActivityCompat.checkSelfPermission(getActivity(), permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
         List<WifiConfiguration> configuredNetworks = mWifiManager.getConfiguredNetworks();
         if (configuredNetworks != null) {
             mConfiguredNetworks.addAll(configuredNetworks);
@@ -120,7 +135,7 @@ public class WifiModificationFragment extends Fragment
     public View onCreateView(LayoutInflater inflater, final ViewGroup container,
             Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
-        mWifiManager = (WifiManager)getActivity().getSystemService(Context.WIFI_SERVICE);
+        mWifiManager = (WifiManager)getActivity().getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         View view = inflater.inflate(R.layout.wifi_config_modification, container, false);
 
         mConfigsList = (ListView) view.findViewById(R.id.wifiConfigs);

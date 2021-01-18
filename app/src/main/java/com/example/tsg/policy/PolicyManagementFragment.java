@@ -763,7 +763,9 @@ public class PolicyManagementFragment extends BaseSearchablePolicyPreferenceFrag
 
         mProfileMaxTimeOff = (DpcEditTextPreference) findPreference(PROFILE_MAX_TIME_OFF_KEY);
         mProfileMaxTimeOff.setOnPreferenceChangeListener(this);
-        maybeUpdateProfileMaxTimeOff();
+        if (Build.VERSION.SDK_INT >= VERSION_CODES.R) {
+            maybeUpdateProfileMaxTimeOff();
+        }
 
         onCreateSetNewPasswordWithComplexityPreference();
         constrainSpecialCasePreferences();
@@ -777,7 +779,9 @@ public class PolicyManagementFragment extends BaseSearchablePolicyPreferenceFrag
         reloadScreenCaptureDisableUi();
         reloadMuteAudioUi();
         reloadEnableBackupServiceUi();
-        reloadCommonCriteriaModeUi();
+        if (Build.VERSION.SDK_INT >= VERSION_CODES.R) {
+            reloadCommonCriteriaModeUi();
+        }
         reloadEnableSecurityLoggingUi();
         reloadEnableNetworkLoggingUi();
         reloadSetAutoTimeRequiredUi();
@@ -788,6 +792,7 @@ public class PolicyManagementFragment extends BaseSearchablePolicyPreferenceFrag
         reloadPersonalAppsSuspendedUi();
     }
 
+    @RequiresApi(api = Util.R_VERSION_CODE)
     private void maybeUpdateProfileMaxTimeOff() {
         if (mProfileMaxTimeOff.isEnabled()) {
             final String currentValueAsString = Long.toString(
@@ -874,7 +879,9 @@ public class PolicyManagementFragment extends BaseSearchablePolicyPreferenceFrag
         updateStayOnWhilePluggedInPreference();
         updateInstallNonMarketAppsPreference();
         loadPasswordCompliant();
-        loadPasswordComplexity();
+        if (Build.VERSION.SDK_INT >= VERSION_CODES.Q) {
+            loadPasswordComplexity();
+        }
         loadSeparateChallenge();
         reloadAffiliatedApis();
     }
@@ -1047,13 +1054,17 @@ public class PolicyManagementFragment extends BaseSearchablePolicyPreferenceFrag
                 showHideAppsPrompt(false);
                 return true;
             case HIDE_APPS_PARENT_KEY:
-                showHideAppsOnParentPrompt(false);
+                if (Build.VERSION.SDK_INT >= VERSION_CODES.R) {
+                    showHideAppsOnParentPrompt(false);
+                }
                 return true;
             case UNHIDE_APPS_KEY:
                 showHideAppsPrompt(true);
                 return true;
             case UNHIDE_APPS_PARENT_KEY:
-                showHideAppsOnParentPrompt(true);
+                if (Build.VERSION.SDK_INT >= VERSION_CODES.R) {
+                    showHideAppsOnParentPrompt(true);
+                }
                 return true;
             case SUSPEND_APPS_KEY:
                 showSuspendAppsPrompt(false);
@@ -2354,6 +2365,7 @@ public class PolicyManagementFragment extends BaseSearchablePolicyPreferenceFrag
                 Boolean.toString(separate)));
     }
 
+    @RequiresApi(api = VERSION_CODES.Q)
     private void loadPasswordComplexity() {
         Preference passwordComplexityPreference = findPreference(PASSWORD_COMPLEXITY_KEY);
         if (!passwordComplexityPreference.isEnabled()) {
@@ -2508,7 +2520,7 @@ public class PolicyManagementFragment extends BaseSearchablePolicyPreferenceFrag
         }
     }
 
-    //@TargetApi(VERSION_CODES.R)
+    @RequiresApi(api = Util.R_VERSION_CODE)
     private void reloadCommonCriteriaModeUi() {
         if (mCommonCriteriaModePreference.isEnabled()) {
             mCommonCriteriaModePreference.setChecked(
@@ -3131,12 +3143,9 @@ public class PolicyManagementFragment extends BaseSearchablePolicyPreferenceFrag
                 R.id.pkg_name, installedApps, true);
         new AlertDialog.Builder(getActivity())
                 .setTitle(getString(R.string.uninstall_packages_title))
-                .setAdapter(appInfoArrayAdapter, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int position) {
-                        String packageName = installedApps.get(position);
-                        PackageInstallationUtils.uninstallPackage(getContext(), packageName);
-                    }
+                .setAdapter(appInfoArrayAdapter, (dialog, position) -> {
+                    String packageName = installedApps.get(position);
+                    PackageInstallationUtils.uninstallPackage(getContext(), packageName);
                 })
                 .show();
     }

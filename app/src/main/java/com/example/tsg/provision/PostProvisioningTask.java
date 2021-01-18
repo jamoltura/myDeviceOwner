@@ -59,7 +59,7 @@ import java.util.List;
 public class PostProvisioningTask {
     private static final String TAG = "PostProvisioningTask";
     private static final String SETUP_MANAGEMENT_LAUNCH_ACTIVITY =
-            "com.afwsamples.testdpc.SetupManagementLaunchActivity";
+            "com.example.tsg.SetupManagementLaunchActivity";
     private static final String POST_PROV_PREFS = "post_prov_prefs";
     private static final String KEY_POST_PROV_DONE = "key_post_prov_done";
 

@@ -61,7 +61,7 @@ public class DeviceAdminReceiver extends android.app.admin.DeviceAdminReceiver {
     private static final String TAG = "DeviceAdminReceiver";
 
     public static final String ACTION_PASSWORD_REQUIREMENTS_CHANGED =
-            "com.afwsamples.testdpc.policy.PASSWORD_REQUIREMENTS_CHANGED";
+            "com.example.tsg.policy.PASSWORD_REQUIREMENTS_CHANGED";
 
     private static final String LOGS_DIR = "logs";
 

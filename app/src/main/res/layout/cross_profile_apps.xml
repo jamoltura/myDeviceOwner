@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="12dp">
 
     <TextView
@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/cross_profile_apps_api_explanation"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/cross_profile_app_description"
@@ -29,7 +30,8 @@
         android:adjustViewBounds="true"
         android:paddingTop="20dp"
         android:scaleType="fitCenter"
-        app:layout_constraintTop_toBottomOf="@id/cross_profile_app_description"/>
+        app:layout_constraintTop_toBottomOf="@id/cross_profile_app_description"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/cross_profile_app_label"

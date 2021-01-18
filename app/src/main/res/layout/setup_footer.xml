@@ -19,8 +19,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     style="@style/SuwGlifButtonBar.Stackable"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:suwFooter="@layout/setup_footer">
+    android:layout_height="wrap_content">
 
     <Button
         android:id="@+id/exit_button"

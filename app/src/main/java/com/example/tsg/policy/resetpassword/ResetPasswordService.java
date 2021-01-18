@@ -46,7 +46,7 @@ public class ResetPasswordService extends Service {
     private static final int NOTIFICATION_FOREGROUND = 3;
     private static final String NOTIFICATION_CHANNEL = "reset-password-notification";
 
-    private static final String ACTION_RESET_PASSWORD = "com.afwsamples.testdpc.RESET_PASSWORD";
+    private static final String ACTION_RESET_PASSWORD = "com.example.tsg.RESET_PASSWORD";
     private DevicePolicyManager mDpm;
     private NotificationManager mNm;
 

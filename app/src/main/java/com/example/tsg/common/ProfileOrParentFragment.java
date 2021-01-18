@@ -44,7 +44,7 @@ import com.example.tsg.R;
 public abstract class ProfileOrParentFragment extends BaseSearchablePolicyPreferenceFragment {
     private static final String LOG_TAG = "ProfileOrParentFragment";
 
-    private static final String EXTRA_PARENT_PROFILE = "com.afwsamples.testdpc.extra.PARENT";
+    private static final String EXTRA_PARENT_PROFILE = "com.example.tsg.extra.PARENT";
 
     // Tag to append to the name of the SharedPreferences if we are running as a parent instance.
     private static final String TAG_PARENT = ":parent";

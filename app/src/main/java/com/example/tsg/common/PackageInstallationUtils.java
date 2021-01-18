@@ -32,9 +32,9 @@ import java.io.OutputStream;
 public class PackageInstallationUtils {
 
     public static final String ACTION_INSTALL_COMPLETE
-            = "com.afwsamples.testdpc.INSTALL_COMPLETE";
+            = "com.example.tsg.INSTALL_COMPLETE";
     private static final String ACTION_UNINSTALL_COMPLETE
-            = "com.afwsamples.testdpc.UNINSTALL_COMPLETE";
+            = "com.example.tsg.UNINSTALL_COMPLETE";
 
     public static boolean installPackage(Context context, InputStream in, String packageName)
             throws IOException {

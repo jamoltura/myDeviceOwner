@@ -1,5 +1,6 @@
 package com.example.tsg.common;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.preference.PreferenceFragment;
@@ -118,9 +119,9 @@ public abstract class BaseSearchablePolicyPreferenceFragment extends PreferenceF
     }
 
     private int findListPositionFromKey(PreferenceGroupAdapter adapter, String key) {
-        final int count = adapter.getItemCount();
+        @SuppressLint("RestrictedApi") final int count = adapter.getItemCount();
         for (int n = 0; n < count; n++) {
-            final Preference preference = adapter.getItem(n);
+            @SuppressLint("RestrictedApi") final Preference preference = adapter.getItem(n);
             final String preferenceKey = preference.getKey();
             if (preferenceKey != null && preferenceKey.equals(key)) {
                 return n;
@@ -132,6 +133,7 @@ public abstract class BaseSearchablePolicyPreferenceFragment extends PreferenceF
     /**
      * Highlight a specific preference by showing a ripple.
      */
+    @SuppressLint("RestrictedApi")
     public static class HighlightablePreferenceGroupAdapter extends PreferenceGroupAdapter {
         private int mHighlightPosition = -1;
 

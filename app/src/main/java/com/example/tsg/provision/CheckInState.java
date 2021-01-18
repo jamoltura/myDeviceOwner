@@ -36,7 +36,7 @@ public class CheckInState {
      * Broadcast Action: FIRST_ACCOUNT_READY broadcast is processed.
      */
     public static final String FIRST_ACCOUNT_READY_PROCESSED_ACTION =
-            "com.afwsamples.testdpc.FIRST_ACCOUNT_READY_PROCESSED";
+            "com.example.tsg.FIRST_ACCOUNT_READY_PROCESSED";
 
     public CheckInState(Context context) {
         mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);

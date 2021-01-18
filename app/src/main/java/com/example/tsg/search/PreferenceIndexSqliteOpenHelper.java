@@ -25,11 +25,11 @@ public class PreferenceIndexSqliteOpenHelper extends SQLiteOpenHelper {
                     PreferenceIndexTable.TITLE + " TEXT NOT NULL," +
                     PreferenceIndexTable.FRAGMENT_CLASS + " TEXT NOT NULL" +
                     ");";
+    private static String SSS = " USING fts4 (content='";
     private static final String CREATE_FTS_TABLE =
             "CREATE VIRTUAL TABLE " + PreferenceIndexFtsTable.TABLE_NAME +
-                    " USING fts4 (content='" + PreferenceIndexTable.TABLE_NAME + "', " +
-                    PreferenceIndexTable.TITLE +
-                    ");";
+                    SSS + PreferenceIndexTable.TABLE_NAME + "', " +
+                    PreferenceIndexTable.TITLE + ");";
     private static final String REBUILD_FTS_SQL =
             "INSERT INTO " + PreferenceIndexFtsTable.TABLE_NAME + "(" +
                     PreferenceIndexFtsTable.TABLE_NAME + ") VALUES('rebuild')";
@@ -154,7 +154,7 @@ public class PreferenceIndexSqliteOpenHelper extends SQLiteOpenHelper {
         /**
          * Key of preference.
          */
-        private static final String KEY = "key";
+        private static final String KEY = "_key";
         /**
          * Title of preference.
          */
