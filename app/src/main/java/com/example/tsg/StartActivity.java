@@ -22,8 +22,8 @@ public class StartActivity extends Activity {
             String login = ed_login.getText().toString();
             String password = ed_password.getText().toString();
 
-            String a_login = "SCMGHTI";
-            String a_password = "SC545381";
+            String a_login = "jfduSTov456";
+            String a_password = "fjd8108fjd";
 
             if (login.equals(a_login) && password.equals(a_password)){
                 Intent intent = new Intent(getApplicationContext(), PolicyManagementActivity.class);

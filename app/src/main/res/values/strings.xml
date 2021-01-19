@@ -16,8 +16,8 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="app_name">CSProxy</string>
-    <string name="setup_app_name">Настроить CSProxy</string>
+    <string name="app_name">Uz Admin</string>
+    <string name="setup_app_name">Настроить Uz Admin</string>
     <string name="cancel">Отмена</string>
     <string name="set_up_managed_profile">Настроить управляемый профиль</string>
     <string name="set_up_device_owner">Настроить владельца устройства</string>
@@ -27,8 +27,8 @@
         соответствующее управление с помощью этого приложения.</string>
     <string name="setup_management_message_for_do">Это приложение в настоящее время назначено владельцем устройства. Выберите параметры
         ниже и нажмите Далее, чтобы создать профиль, управляемый тем же приложением.</string>
-    <string name="provisioning_not_possible">CSProxy в настоящее время не может быть настроен как владелец профиля или устройства.</string>
-    <string name="provisioning_not_possible_for_do">CSProxy в настоящее время не может создавать управляемый профиль.</string>
+    <string name="provisioning_not_possible">Uz Admin в настоящее время не может быть настроен как владелец профиля или устройства.</string>
+    <string name="provisioning_not_possible_for_do">Uz Admin в настоящее время не может создавать управляемый профиль.</string>
     <string name="exit">Выход</string>
     <string name="managed_account_message">Добавлен аккаунт, требующий управления:</string>
     <string name="managed_account_complete_message">Добавлен аккаунт, которым теперь управляют:</string>
@@ -88,7 +88,7 @@
     </string>
     <string name="policies_management">Управление политикой</string>
     <string name="other_owner_already_setup_error">Уже есть владелец устройства / профиля, не может
-        запустить CSProxy</string>
+        запустить Uz Admin</string>
     <string name="invalid_launch_intent_no_account">Аккаунт по входящему намерению не найден</string>
     <string name="device_admin_receiver_failure">Не удалось стать владельцем устройства / профиля</string>
     <string name="menu_search_title">Search</string>
@@ -122,8 +122,8 @@
     <string name="this_is_not_an_admin">Это приложение не является администратором.</string>
 
     <!-- Strings for provisioning disclaimers-->
-    <string name="default_disclaimer_company_name">Компания CSProxy</string>
-    <string name="default_disclaimer_emm_name">CSProxy EMM</string>
+    <string name="default_disclaimer_company_name">Компания Uz Admin</string>
+    <string name="default_disclaimer_emm_name">Uz Admin EMM</string>
 
     <!-- Strings for device owner management -->
     <string name="device_owner_management">Управление владельцем устройства</string>
@@ -939,7 +939,7 @@
     <string name="password_expiration_aggregate">Истечение срока всеми/другими администраторами</string>
 
     <string name="password_expired_title">Срок действия пароля истек</string>
-    <string name="password_expired_by_self">Согласно политике, установленной CSProxy.</string>
+    <string name="password_expired_by_self">Согласно политике, установленной Uz Admin.</string>
     <string name="password_expired_by_others">В соответствии с политикой, установленной другим администратором.</string>
     <string name="password_history_length">Длина истории паролей</string>
 
@@ -1000,7 +1000,7 @@
         Это действие отключено вашим администратором. Для получения поддержки обратитесь по адресу jamoltura81@gmail.com.
     </string>
     <string name="default_long_message">
-        Этот профиль или устройство управляется CSProxy. Вы можете связаться с тех.
+        Этот профиль или устройство управляется Uz Admin. Вы можете связаться с тех.
         поддержка на:\n\n
         Uzbekistan: 99 351 90 82\n\n
         Email: jamoltura81@gmail.com
@@ -1078,7 +1078,7 @@
     <string name="reset_password_fragment_new_password_label">Новый пароль:</string>
     <string name="reset_password_fragment_set_password">Установка пароля</string>
     <string name="reset_password_no_token">Нет токена</string>
-    <string name="reset_password_foreground_notification">Служба сброса пароля CSProxy запущена</string>
+    <string name="reset_password_foreground_notification">Служба сброса пароля Uz Admin запущена</string>
     <string name="reset_password_notification">Смахните это уведомление, чтобы сбросить пароль</string>
 
     <string name="package_changed_notification_title">Наблюдаются изменения в пакете</string>
@@ -1089,8 +1089,8 @@
     <string name="cross_profile_apps_api">Продемонстрируйте API CrossProfileApps</string>
     <string name="cross_profile_apps_api_explanation">Используя API CrossProfileApps, приложения могут запускать экземпляр в другом
         профиле при условии, что приложение также установлено в этом профиле.</string>
-    <string name="cross_profile_apps_available">CSProxy установлен в другом профиле, коснитесь значка, чтобы запустить его в этом профиле.</string>
-    <string name="cross_profile_apps_not_available">CSProxy не установлен в другом профиле, попробуйте установить его и вернитесь сюда.</string>
+    <string name="cross_profile_apps_available">Uz Admin установлен в другом профиле, коснитесь значка, чтобы запустить его в этом профиле.</string>
+    <string name="cross_profile_apps_not_available">Uz Admin не установлен в другом профиле, попробуйте установить его и вернитесь сюда.</string>
 
     <string name="cross_profile_apps_whitelist">Приложения с перекрестным профилем в белом списке</string>
     <string name="cross_profile_apps_enabled_title">Включены кросс-профильные приложения</string>
@@ -1101,7 +1101,7 @@
     <string name="cross_profile_apps_reset_button_text">Сбросить кросс-профильные приложения</string>
 
     <string name="install_update">Установить обновление из файла</string>
-    <string name="install_update_prompt">Будет предпринята попытка установить файл обновления ota.zip в каталог файлов CSProxy,
+    <string name="install_update_prompt">Будет предпринята попытка установить файл обновления ota.zip в каталог файлов Uz Admin,
         если файл существует (т.е. если вы отправили его туда с помощью adb). Вы хотите продолжить?</string>
     <string name="install_update_prompt_yes">Да</string>
     <string name="install_update_prompt_no">Нет</string>
@@ -1113,7 +1113,7 @@
     <string name="dpc_login_po">Управляемый профиль</string>
     <string name="dpc_login_comp">Управляемый профиль на полностью управляемом устройстве</string>
     <string name="dpc_policy_compliance_title">Соответствие политике dpc</string>
-    <string name="dpc_policy_compliance_explanation">Настройка CSProxy завершена.</string>
+    <string name="dpc_policy_compliance_explanation">Настройка Uz Admin завершена.</string>
 
     <string name="vpn_exempted_packages">Освобожденные пакеты</string>
     <string name="vpn_lockdown">Карантин</string>
